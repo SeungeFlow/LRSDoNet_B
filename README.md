@@ -63,3 +63,24 @@ structure is relation processing.
 
 [`singularity.md`](./singularity.md)는 작업 중 발생한 구조적 특이점, 원치 않은 결과, 복구과정과 이후 적용할 Guard를 누적 기록하는 운영문서다. 새로운 특이점은 기존 기록을 지우지 않고 문서 끝에 추가한다.
 <!-- SINGULARITY_RECORD_END -->
+
+<!-- LRSDONET_CANONICAL_SYSTEM_BEGIN -->
+## LRSDoNET Canonical System
+
+현재 System Object:
+
+- [`cc61c9fbfae6da5ec4c08c372a5b03bf7defeefe87abae3ef2ddec35324c3675.B.md`](./00_system/cc61c9fbfae6da5ec4c08c372a5b03bf7defeefe87abae3ef2ddec35324c3675.B.md)
+- object SHA-256: `cc61c9fbfae6da5ec4c08c372a5b03bf7defeefe87abae3ef2ddec35324c3675`
+- source directive: `fc75b5d19f7e4db4f297df6e4784b54aa2752d4b7fba32525e0d9cd803e52ae8`
+
+관련 Method Object:
+
+- repository: `SeungeFlow/Principle_C`
+- branch: `Start_Position`
+- commit: `806d3222611282fe80977a9121a86a133fc23a62`
+- tree: `a65ca1a5f27f7fedf83047df60574fb5e66738b9`
+- path: `06_methodology/02a2815a110a53e29951f07b7167be24775e149ba40c52a1513f49f9360030fa.C.md`
+- SHA-256: `02a2815a110a53e29951f07b7167be24775e149ba40c52a1513f49f9360030fa`
+
+`gpt.xyzt.md`는 Stable Seat Entry Contract로 유지하며, 위 System Object가 시스템·Runtime의 상세 정본 역할을 맡는다.
+<!-- LRSDONET_CANONICAL_SYSTEM_END -->
