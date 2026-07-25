@@ -84,3 +84,66 @@ structure is relation processing.
 
 `gpt.xyzt.md`는 Stable Seat Entry Contract로 유지하며, 위 System Object가 시스템·Runtime의 상세 정본 역할을 맡는다.
 <!-- LRSDONET_CANONICAL_SYSTEM_END -->
+
+<!-- AI_STYLE_METHOD_RELATION_BEGIN -->
+## AI.Style Method Relation
+
+현재 `gpt.think` 인스턴스는 `gpt.xyzt` 통합관제 자리를 점유하여
+`LRSDoNet_B`와 `Principle_C/Start_Position`의 목적·경계·관계를 통제한다.
+
+```text
+LRSDoNet_B
+→ System / Operation / Relation Processing
+
+Principle_C/Start_Position
+→ Method / Principle / Criterion
+```
+
+AI.Style의 Canonical 본문은 `Principle_C/Start_Position`에만 존재한다.
+`LRSDoNet_B`는 이 Method를 사용·참조하지만 본문을 복제하거나
+두 Repository를 병합하지 않는다.
+
+### Active Branch Route
+
+- [AI.Style — Start_Position](https://github.com/SeungeFlow/Principle_C/blob/Start_Position/06_methodology/6340e55b5840259aa49d4deed58c17d96f6d8eb0eea9c2b8be1aced330dce9a7.C.md)
+
+### Exact Closure Route
+
+- [AI.Style — 8d2a656fbebfd613855fbf886cc09b448171440a](https://github.com/SeungeFlow/Principle_C/blob/8d2a656fbebfd613855fbf886cc09b448171440a/06_methodology/6340e55b5840259aa49d4deed58c17d96f6d8eb0eea9c2b8be1aced330dce9a7.C.md)
+
+```yaml
+ai_style_relation:
+  controller:
+    seat: gpt.xyzt
+    current_instance: gpt.think
+
+  system_repository:
+    repository: SeungeFlow/LRSDoNet_B
+    branch: main
+    role: SYSTEM_OPERATION_RELATION_PROCESSING
+
+  method_repository:
+    repository: SeungeFlow/Principle_C
+    branch: Start_Position
+    commit: 8d2a656fbebfd613855fbf886cc09b448171440a
+    tree: 2e98bde75cf92059ceec08d3cd0bc161927d33f3
+    path: 06_methodology/6340e55b5840259aa49d4deed58c17d96f6d8eb0eea9c2b8be1aced330dce9a7.C.md
+    sha256: 6340e55b5840259aa49d4deed58c17d96f6d8eb0eea9c2b8be1aced330dce9a7
+    blob: f6e913ceb29ef91dd07441199d957bfac5e91628
+    role: METHOD_PRINCIPLE_CRITERION
+
+  relation:
+    type: USES_AND_REFERENCES
+    body_copied_to_B: false
+    repositories_merged: false
+    validation_state: REMOTE_CLOSURE_VERIFIED
+```
+
+```text
+LRSDoNet_B System
+→ uses / references
+→ Principle_C AI.Style Method
+
+System does not copy or merge the Method repository.
+```
+<!-- AI_STYLE_METHOD_RELATION_END -->
