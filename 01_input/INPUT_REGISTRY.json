@@ -1,7 +1,27 @@
 {
   "schema_name": "lrsdonet_b_track_db_input_registry",
   "version": "1.0.0",
-  "state": "EMPTY_VALID_INPUT_SPACE",
-  "objects": [],
+  "state": "VALIDATED_INPUT_PROFILE_SET_READY_FOR_METHOD_SELECTION",
+  "objects": [
+    {
+      "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+      "manifest": {
+        "hash": "0c2ae8c838031b0d33a831f9d34e882afe5103d051e56ca33939558ca249d9ef",
+        "filename": "0c2ae8c838031b0d33a831f9d34e882afe5103d051e56ca33939558ca249d9ef.B.json",
+        "path": "01_input/0c2ae8c838031b0d33a831f9d34e882afe5103d051e56ca33939558ca249d9ef.B.json"
+      },
+      "primary_profile": {
+        "hash": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261",
+        "filename": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261.B.md",
+        "path": "01_input/a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261.B.md"
+      },
+      "source_track_db_count": 5,
+      "head_profile_count": 5,
+      "process_lineage_ledger_count": 4,
+      "full_body_profile_count": 1,
+      "state": "READY_FOR_METHOD_SELECTION",
+      "unresolved_preserved": true
+    }
+  ],
   "rule": "Add Track DB objects without rewriting their source identity."
 }

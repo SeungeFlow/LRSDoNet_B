@@ -1,0 +1,254 @@
+{
+  "schema_name": "lrsdonet_b_five_profile_intake_integration_manifest",
+  "schema_version": "1.0.0",
+  "state": "READY_FOR_GPT_GITHUB_B_HANDOFF",
+  "identity_code": "B",
+  "generated_by": {
+    "instance": "gpt.think",
+    "seat": "gpt.xyzt",
+    "source_authority": "승이",
+    "countdown_stage": "2_OF_3"
+  },
+  "baseline": {
+    "LRSDoNet_B": {
+      "branch": "main",
+      "commit": "bae40224b53a0921402f91420a0e891b4c75c2cb",
+      "tree": "db90d09aa94daf3e22c7214ca7c738254ae22068"
+    },
+    "Principle_C": {
+      "branch": "Start_Position",
+      "commit": "8d2a656fbebfd613855fbf886cc09b448171440a",
+      "tree": "2e98bde75cf92059ceec08d3cd0bc161927d33f3"
+    },
+    "HRTDB_A": {
+      "branch": "TrackDB",
+      "commit": "0e085e00d975c0aa02f89711c7b6ccc3f2277df7",
+      "tree": "9f19fef08e12f1e64400ad3b7d4565333f9ac44b"
+    }
+  },
+  "source_track_db_set": {
+    "count": 5,
+    "identity_preservation": true,
+    "merge": false,
+    "entries": [
+      {
+        "shard": "72",
+        "subject_id": "OBSERVER_AXIS_REFERENCE_FRAME_TRACK_PROVENANCE_RELATION",
+        "track_db_hash": "72428e7ddf3ea03db711449f3930698e82e4961a25103f330fa482dc7262d65b"
+      },
+      {
+        "shard": "9d",
+        "subject_id": "AI_DATA_CENTER_FUSION_RELATION",
+        "track_db_hash": "9dfff9d3a75cc7387f10ae2571190964c94b22213cf0a43077afbdfaf9507ba4"
+      },
+      {
+        "shard": "c0",
+        "subject_id": "FOUNDATIONAL_TRACK_DB_ASSET",
+        "track_db_hash": "c02a46b9b2d47c92d97ef782451b7bd6b271f225658787f51e505c84f83bbce3"
+      },
+      {
+        "shard": "d1",
+        "subject_id": "ROTATION_AXIS_RELATION_STRUCTURE",
+        "track_db_hash": "d11bd436902979cf4c5db1ace6f21887be1d3b29b3983e890f75304e0a7face2"
+      },
+      {
+        "shard": "15",
+        "subject_id": "US_EQUITY_INDEX_FUTURES_CASH_OPENING_PRICE_STATE",
+        "track_db_hash": "1523d068820c1ca704d3a23cc86b7fb1e3d62711c5646c3afef3b4ab84928c88",
+        "input_role": "PRIMARY_INPUT_DIRECT"
+      }
+    ]
+  },
+  "repository_additions": {
+    "target_repository": "SeungeFlow/LRSDoNet_B",
+    "target_branch": "main",
+    "target_directory": "01_input",
+    "immutable_object_count": 11,
+    "immutable_object_total_bytes": 321467,
+    "objects": [
+      {
+        "order": 1,
+        "role": "COMMON_HEAD_PROFILE_SCHEMA_AND_TRACK15_READING_SCOPE",
+        "class": "SCHEMA_OBJECT",
+        "filename": "b096130f6818b57d0287d217c40c7da5b4ad91e58081b4c84fe95726bda28d5d.B.md",
+        "sha256": "b096130f6818b57d0287d217c40c7da5b4ad91e58081b4c84fe95726bda28d5d",
+        "bytes": 24148,
+        "target_path": "01_input/b096130f6818b57d0287d217c40c7da5b4ad91e58081b4c84fe95726bda28d5d.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 2,
+        "role": "PROFILE_72_HEAD_DATA_PROFILE",
+        "class": "HEAD_DATA_PROFILE",
+        "filename": "242ee9537544050a5c6851d529964795d0bc4b80f3d812e67875fd9cbd0baafe.B.md",
+        "sha256": "242ee9537544050a5c6851d529964795d0bc4b80f3d812e67875fd9cbd0baafe",
+        "bytes": 16314,
+        "target_path": "01_input/242ee9537544050a5c6851d529964795d0bc4b80f3d812e67875fd9cbd0baafe.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 3,
+        "role": "PROFILE_9D_HEAD_DATA_PROFILE",
+        "class": "HEAD_DATA_PROFILE",
+        "filename": "2d3784d998974753dbd1eee53786a3f8148546c2b2651694724ba5cc716348a7.B.md",
+        "sha256": "2d3784d998974753dbd1eee53786a3f8148546c2b2651694724ba5cc716348a7",
+        "bytes": 19429,
+        "target_path": "01_input/2d3784d998974753dbd1eee53786a3f8148546c2b2651694724ba5cc716348a7.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 4,
+        "role": "PROFILE_C0_HEAD_DATA_PROFILE",
+        "class": "HEAD_DATA_PROFILE",
+        "filename": "e0abb173490c069a4d0b4ca6df555321c1a2aea1edd1fa4f3c9ee5dba36604fd.B.md",
+        "sha256": "e0abb173490c069a4d0b4ca6df555321c1a2aea1edd1fa4f3c9ee5dba36604fd",
+        "bytes": 22963,
+        "target_path": "01_input/e0abb173490c069a4d0b4ca6df555321c1a2aea1edd1fa4f3c9ee5dba36604fd.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 5,
+        "role": "PROFILE_D1_HEAD_DATA_PROFILE",
+        "class": "HEAD_DATA_PROFILE",
+        "filename": "ddf44bf59f36f903a47105ff20f636d2818bf905bbaf4417b8f74ca96db33a98.B.md",
+        "sha256": "ddf44bf59f36f903a47105ff20f636d2818bf905bbaf4417b8f74ca96db33a98",
+        "bytes": 25775,
+        "target_path": "01_input/ddf44bf59f36f903a47105ff20f636d2818bf905bbaf4417b8f74ca96db33a98.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 6,
+        "role": "PROFILE_15_HEAD_DATA_PROFILE",
+        "class": "HEAD_DATA_PROFILE",
+        "filename": "83a8f5aa3f1fa67732f836e3dd458894a84886ccb83832dc1911b664088273bf.B.md",
+        "sha256": "83a8f5aa3f1fa67732f836e3dd458894a84886ccb83832dc1911b664088273bf",
+        "bytes": 32798,
+        "target_path": "01_input/83a8f5aa3f1fa67732f836e3dd458894a84886ccb83832dc1911b664088273bf.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 7,
+        "role": "TRACK15_PASS_A_IDENTITY_INPUT_FORMATION",
+        "class": "PROCESS_LINEAGE_LEDGER",
+        "filename": "7203769d2e7875be5e9699119b5c6b4b5ca8d6c552b597bb81dcbde4b0aa36d5.B.md",
+        "sha256": "7203769d2e7875be5e9699119b5c6b4b5ca8d6c552b597bb81dcbde4b0aa36d5",
+        "bytes": 24433,
+        "target_path": "01_input/7203769d2e7875be5e9699119b5c6b4b5ca8d6c552b597bb81dcbde4b0aa36d5.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 8,
+        "role": "TRACK15_PASS_B_CANONICAL_STATE_RELATION",
+        "class": "PROCESS_LINEAGE_LEDGER",
+        "filename": "5321f0c2cf4e01675b89270a8cca893d27f78ddb1e7e46a45e25936b7ae11b31.B.md",
+        "sha256": "5321f0c2cf4e01675b89270a8cca893d27f78ddb1e7e46a45e25936b7ae11b31",
+        "bytes": 43042,
+        "target_path": "01_input/5321f0c2cf4e01675b89270a8cca893d27f78ddb1e7e46a45e25936b7ae11b31.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 9,
+        "role": "TRACK15_PASS_C_DIFFERENCE_CONFLICT_OPEN",
+        "class": "PROCESS_LINEAGE_LEDGER",
+        "filename": "db4983156d74ab9ac82a1504de223f4fc51ea8aad16bd7f2650483aeca9cdba8.B.md",
+        "sha256": "db4983156d74ab9ac82a1504de223f4fc51ea8aad16bd7f2650483aeca9cdba8",
+        "bytes": 49418,
+        "target_path": "01_input/db4983156d74ab9ac82a1504de223f4fc51ea8aad16bd7f2650483aeca9cdba8.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 10,
+        "role": "TRACK15_PASS_D_SOURCE_LINEAGE_CLOSURE",
+        "class": "PROCESS_LINEAGE_LEDGER",
+        "filename": "ead83c4277182c88b76352050c91a270b024603e8f7f57835aab70c12e360e6f.B.md",
+        "sha256": "ead83c4277182c88b76352050c91a270b024603e8f7f57835aab70c12e360e6f",
+        "bytes": 28827,
+        "target_path": "01_input/ead83c4277182c88b76352050c91a270b024603e8f7f57835aab70c12e360e6f.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      },
+      {
+        "order": 11,
+        "role": "PROFILE_15_FINAL_FULL_BODY_DATA_PROFILE",
+        "class": "VALIDATED_FULL_BODY_DATA_PROFILE",
+        "filename": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261.B.md",
+        "sha256": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261",
+        "bytes": 34320,
+        "target_path": "01_input/a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261.B.md",
+        "required": true,
+        "identity_validation": "PASS"
+      }
+    ],
+    "core_input_object_hashes": [
+      "b096130f6818b57d0287d217c40c7da5b4ad91e58081b4c84fe95726bda28d5d",
+      "242ee9537544050a5c6851d529964795d0bc4b80f3d812e67875fd9cbd0baafe",
+      "2d3784d998974753dbd1eee53786a3f8148546c2b2651694724ba5cc716348a7",
+      "e0abb173490c069a4d0b4ca6df555321c1a2aea1edd1fa4f3c9ee5dba36604fd",
+      "ddf44bf59f36f903a47105ff20f636d2818bf905bbaf4417b8f74ca96db33a98",
+      "83a8f5aa3f1fa67732f836e3dd458894a84886ccb83832dc1911b664088273bf",
+      "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261"
+    ],
+    "process_lineage_object_hashes": [
+      "7203769d2e7875be5e9699119b5c6b4b5ca8d6c552b597bb81dcbde4b0aa36d5",
+      "5321f0c2cf4e01675b89270a8cca893d27f78ddb1e7e46a45e25936b7ae11b31",
+      "db4983156d74ab9ac82a1504de223f4fc51ea8aad16bd7f2650483aeca9cdba8",
+      "ead83c4277182c88b76352050c91a270b024603e8f7f57835aab70c12e360e6f"
+    ],
+    "primary_profile_hash": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261"
+  },
+  "registry_semantic_delta": {
+    "target_path": "01_input/INPUT_REGISTRY.json",
+    "before_precondition": {
+      "sha256": "c9a3aff95ae09a8a5e3acc1e763ba176098a267458f23cc7f9f445144fa89287",
+      "bytes": 210,
+      "schema_name": "lrsdonet_b_track_db_input_registry",
+      "version": "1.0.0",
+      "state": "EMPTY_VALID_INPUT_SPACE"
+    },
+    "operation": "APPEND_ONE_VALIDATED_INPUT_SET_POINTER",
+    "after_state": "VALIDATED_INPUT_PROFILE_SET_READY_FOR_METHOD_SELECTION",
+    "entry_template": {
+      "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+      "manifest_object": "SELF_AFTER_EXACT_BYTE_FREEZE",
+      "primary_profile_hash": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261",
+      "source_track_db_count": 5,
+      "head_profile_count": 5,
+      "process_lineage_ledger_count": 4,
+      "full_body_profile_count": 1,
+      "state": "READY_FOR_METHOD_SELECTION",
+      "open_state_preserved": true
+    },
+    "serialization_rule": "Cold-read the exact current registry and preserve its existing key names. Add one pointer only; do not duplicate all manifest members in the registry.",
+    "hold_if_precondition_mismatch": true
+  },
+  "unchanged_control_surfaces": [
+    "01_input/TRACK_DB_INPUT_CONTRACT.md",
+    "02_method/ACTIVE_LINEUP.json",
+    "02_method/METHOD_SELECTOR.md",
+    "02_method/METHOD_RUNTIME_CATALOG.json",
+    "08_relation/RELATION_REGISTRY.json",
+    "README.md"
+  ],
+  "prohibited_payload": [
+    "HRTDB_A Track DB source bodies",
+    "Principle_C method bodies",
+    "SHA-256 sidecars",
+    "GitHub backup artifacts",
+    "temporary delivery evidence not designated as repository objects"
+  ],
+  "guards": [
+    "relation is not merge",
+    "relation is interconnecting",
+    "structure is not isolate",
+    "structure is relation processing"
+  ]
+}
