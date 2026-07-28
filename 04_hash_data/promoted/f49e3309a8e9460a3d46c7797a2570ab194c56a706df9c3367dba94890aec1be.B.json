@@ -1,0 +1,307 @@
+{
+  "schema_name": "lrsdonet_b_result_data_repository_binding_manifest",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "state": "READY_FOR_RESULT_DATA_REPOSITORY_BINDING",
+  "generated_by": {
+    "instance": "gpt.think",
+    "seat": "gpt.xyzt",
+    "controller_method": "CAND-021"
+  },
+  "repository_baseline": {
+    "repository": "SeungeFlow/LRSDoNet_B",
+    "branch": "main",
+    "commit": "0700682bed9342dd1a274cb3b0e85e5a4395f6be",
+    "tree": "901ca6e7c93ee00331e73e7a09825c50863e1ca5"
+  },
+  "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+  "target_region": "04_hash_data/promoted",
+  "region_basis": {
+    "hash_data_contract": "Hash Data is a stagewise crystallized Result.Data document object.",
+    "promotion_contract": "Validator-passed Hash Data reusable as Data for the next Process.",
+    "staging_used": false,
+    "reason": "All included objects are closed by stage, controller, or rebind validation while preserving HOLD/OPEN states."
+  },
+  "object_count_excluding_this_manifest": 25,
+  "objects": [
+    {
+      "filename": "e905b87e6f884c3b2f558076469abee90347e90c7feec35f3de2d9b05c756db7.B.md",
+      "sha256": "e905b87e6f884c3b2f558076469abee90347e90c7feec35f3de2d9b05c756db7",
+      "bytes": 16935,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-001",
+      "runtime_stage": "SOURCE_EVIDENCE_GATE",
+      "target_path": "04_hash_data/promoted/e905b87e6f884c3b2f558076469abee90347e90c7feec35f3de2d9b05c756db7.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "69ce241ad7b9b7579a04587b38ccc356d556915feaf209709c884a853d84e2b1.B.md",
+      "sha256": "69ce241ad7b9b7579a04587b38ccc356d556915feaf209709c884a853d84e2b1",
+      "bytes": 12128,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-003",
+      "runtime_stage": "SOURCE_EVIDENCE_GATE",
+      "target_path": "04_hash_data/promoted/69ce241ad7b9b7579a04587b38ccc356d556915feaf209709c884a853d84e2b1.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "b31432c96d60c51f8e53850eee6ffd32cd9133ffe2f5fb8e3de96837fc9fa4d4.B.md",
+      "sha256": "b31432c96d60c51f8e53850eee6ffd32cd9133ffe2f5fb8e3de96837fc9fa4d4",
+      "bytes": 6254,
+      "object_class": "METHOD_RUNTIME_STAGE_CLOSURE",
+      "role": "SOURCE_EVIDENCE_GATE",
+      "runtime_stage": "SOURCE_EVIDENCE_GATE",
+      "target_path": "04_hash_data/promoted/b31432c96d60c51f8e53850eee6ffd32cd9133ffe2f5fb8e3de96837fc9fa4d4.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "9de21d7be5e0b66360d2f11047fdd6cb242652370cc6298251e3655f42f164d0.B.md",
+      "sha256": "9de21d7be5e0b66360d2f11047fdd6cb242652370cc6298251e3655f42f164d0",
+      "bytes": 10406,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-002",
+      "runtime_stage": "PURPOSE_REFERENCE_GATE",
+      "target_path": "04_hash_data/promoted/9de21d7be5e0b66360d2f11047fdd6cb242652370cc6298251e3655f42f164d0.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "da5af40472ac41403a422764ab0da7cd0782ef205ff9f8dc143333642ddde6c7.B.md",
+      "sha256": "da5af40472ac41403a422764ab0da7cd0782ef205ff9f8dc143333642ddde6c7",
+      "bytes": 11817,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-035",
+      "runtime_stage": "PURPOSE_REFERENCE_GATE",
+      "target_path": "04_hash_data/promoted/da5af40472ac41403a422764ab0da7cd0782ef205ff9f8dc143333642ddde6c7.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "516f669a9821d2f97bc4db0dd03973ea02d5be13106e73ccceaa46a947681fa2.B.md",
+      "sha256": "516f669a9821d2f97bc4db0dd03973ea02d5be13106e73ccceaa46a947681fa2",
+      "bytes": 6081,
+      "object_class": "METHOD_RUNTIME_STAGE_CLOSURE",
+      "role": "PURPOSE_REFERENCE_GATE",
+      "runtime_stage": "PURPOSE_REFERENCE_GATE",
+      "target_path": "04_hash_data/promoted/516f669a9821d2f97bc4db0dd03973ea02d5be13106e73ccceaa46a947681fa2.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "1cb1e6aac44a9ad903870cc7f639fad355d35356dfe2dcdb5deb3b1a83df168f.B.md",
+      "sha256": "1cb1e6aac44a9ad903870cc7f639fad355d35356dfe2dcdb5deb3b1a83df168f",
+      "bytes": 9848,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-015",
+      "runtime_stage": "VALIDATION_GATE",
+      "target_path": "04_hash_data/promoted/1cb1e6aac44a9ad903870cc7f639fad355d35356dfe2dcdb5deb3b1a83df168f.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "ffc18d068b26edf4705ed00d1e4e00d0d690393a94ab6b1b5a0a970f1842ebc0.B.md",
+      "sha256": "ffc18d068b26edf4705ed00d1e4e00d0d690393a94ab6b1b5a0a970f1842ebc0",
+      "bytes": 8973,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-032",
+      "runtime_stage": "VALIDATION_GATE",
+      "target_path": "04_hash_data/promoted/ffc18d068b26edf4705ed00d1e4e00d0d690393a94ab6b1b5a0a970f1842ebc0.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "3a8be3a5ba49feca9651b368500f97224a405971d1247fb7cf66ab44f0d15d2c.B.md",
+      "sha256": "3a8be3a5ba49feca9651b368500f97224a405971d1247fb7cf66ab44f0d15d2c",
+      "bytes": 6185,
+      "object_class": "METHOD_RUNTIME_STAGE_CLOSURE",
+      "role": "VALIDATION_GATE",
+      "runtime_stage": "VALIDATION_GATE",
+      "target_path": "04_hash_data/promoted/3a8be3a5ba49feca9651b368500f97224a405971d1247fb7cf66ab44f0d15d2c.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "8614bf8ed31ce8cc5eccaa921fe95ab7ecca78c15bcc9f38ad916cf1a6eee0db.B.md",
+      "sha256": "8614bf8ed31ce8cc5eccaa921fe95ab7ecca78c15bcc9f38ad916cf1a6eee0db",
+      "bytes": 7377,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-020",
+      "runtime_stage": "SCOPED_RELATION_FORMATION",
+      "target_path": "04_hash_data/promoted/8614bf8ed31ce8cc5eccaa921fe95ab7ecca78c15bcc9f38ad916cf1a6eee0db.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "0aa64160d75970224dd7001ad4c5f5560ba3b31264c398014520d7cfa0690e81.B.md",
+      "sha256": "0aa64160d75970224dd7001ad4c5f5560ba3b31264c398014520d7cfa0690e81",
+      "bytes": 8383,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-089",
+      "runtime_stage": "SCOPED_RELATION_FORMATION",
+      "target_path": "04_hash_data/promoted/0aa64160d75970224dd7001ad4c5f5560ba3b31264c398014520d7cfa0690e81.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "0ec2041f1c50531c222b7dce1e2d2fd48fd3abd415744ccb6577f4c4ec0fb439.B.md",
+      "sha256": "0ec2041f1c50531c222b7dce1e2d2fd48fd3abd415744ccb6577f4c4ec0fb439",
+      "bytes": 7698,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-026",
+      "runtime_stage": "SCOPED_RELATION_FORMATION",
+      "target_path": "04_hash_data/promoted/0ec2041f1c50531c222b7dce1e2d2fd48fd3abd415744ccb6577f4c4ec0fb439.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "9872bb5f14e8d628a55425b2fb87ffe180ea1b51c499d8879a5745ca36b18965.B.md",
+      "sha256": "9872bb5f14e8d628a55425b2fb87ffe180ea1b51c499d8879a5745ca36b18965",
+      "bytes": 5912,
+      "object_class": "METHOD_RUNTIME_STAGE_CLOSURE",
+      "role": "SCOPED_RELATION_FORMATION",
+      "runtime_stage": "SCOPED_RELATION_FORMATION",
+      "target_path": "04_hash_data/promoted/9872bb5f14e8d628a55425b2fb87ffe180ea1b51c499d8879a5745ca36b18965.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "1485c83bba5697999b6351d0a39f6e931c669ca7829eb7e893e48ea6fa0c278e.B.md",
+      "sha256": "1485c83bba5697999b6351d0a39f6e931c669ca7829eb7e893e48ea6fa0c278e",
+      "bytes": 4075,
+      "object_class": "METHOD_RUNTIME_INDEPENDENT_WORKLINE_RESULT",
+      "role": "EVIDENCE_LINE",
+      "runtime_stage": "INDEPENDENT_RUNTIME",
+      "target_path": "04_hash_data/promoted/1485c83bba5697999b6351d0a39f6e931c669ca7829eb7e893e48ea6fa0c278e.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "460392c79fcad8456d1a36930253c7cb79d95a84a1e568de46e1012ae8af2ab6.B.md",
+      "sha256": "460392c79fcad8456d1a36930253c7cb79d95a84a1e568de46e1012ae8af2ab6",
+      "bytes": 4604,
+      "object_class": "METHOD_RUNTIME_INDEPENDENT_WORKLINE_RESULT",
+      "role": "OBSERVATION_VALIDATION_LINE",
+      "runtime_stage": "INDEPENDENT_RUNTIME",
+      "target_path": "04_hash_data/promoted/460392c79fcad8456d1a36930253c7cb79d95a84a1e568de46e1012ae8af2ab6.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7.B.md",
+      "sha256": "af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7",
+      "bytes": 3955,
+      "object_class": "METHOD_RUNTIME_INDEPENDENT_WORKLINE_RESULT",
+      "role": "RELATION_LINE",
+      "runtime_stage": "INDEPENDENT_RUNTIME",
+      "target_path": "04_hash_data/promoted/af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "8d632707f537bf9a3a530ce329727332006c600671fa8f712772c14dad7712f7.B.md",
+      "sha256": "8d632707f537bf9a3a530ce329727332006c600671fa8f712772c14dad7712f7",
+      "bytes": 6817,
+      "object_class": "METHOD_RUNTIME_PARTIAL_RESULT",
+      "role": "CAND-022",
+      "runtime_stage": "INDEPENDENT_RUNTIME",
+      "target_path": "04_hash_data/promoted/8d632707f537bf9a3a530ce329727332006c600671fa8f712772c14dad7712f7.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "820ce96a45091d73e137b3e0afb0558793bfb0058118eac7499877a6fa0eb160.B.md",
+      "sha256": "820ce96a45091d73e137b3e0afb0558793bfb0058118eac7499877a6fa0eb160",
+      "bytes": 4714,
+      "object_class": "METHOD_RUNTIME_STAGE_CLOSURE",
+      "role": "INDEPENDENT_RUNTIME",
+      "runtime_stage": "INDEPENDENT_RUNTIME",
+      "target_path": "04_hash_data/promoted/820ce96a45091d73e137b3e0afb0558793bfb0058118eac7499877a6fa0eb160.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4.B.md",
+      "sha256": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4",
+      "bytes": 10228,
+      "object_class": "METHOD_RUNTIME_CONTROLLER_RESULT",
+      "role": "CAND-021",
+      "runtime_stage": "CONTROLLER_RESULT_FORMATION",
+      "target_path": "04_hash_data/promoted/53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56.B.md",
+      "sha256": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56",
+      "bytes": 5586,
+      "object_class": "CONTROLLER_RESULT_VALIDATION_LEDGER",
+      "role": "RESULT_VALIDATION",
+      "runtime_stage": "CONTROLLER_RESULT_FORMATION",
+      "target_path": "04_hash_data/promoted/087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3.B.md",
+      "sha256": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3",
+      "bytes": 4648,
+      "object_class": "CONTROLLER_RESULT_OPEN_HOLD_LEDGER",
+      "role": "OPEN_HOLD_LEDGER",
+      "runtime_stage": "CONTROLLER_RESULT_FORMATION",
+      "target_path": "04_hash_data/promoted/3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "e774c0fafcc43e10d95038fa6b8352299d2a57c38fcc6d1a6360d2b40f56f44e.B.md",
+      "sha256": "e774c0fafcc43e10d95038fa6b8352299d2a57c38fcc6d1a6360d2b40f56f44e",
+      "bytes": 3178,
+      "object_class": "CONTROLLER_RESULT_FORMATION_CLOSURE",
+      "role": "FORMATION_CLOSURE",
+      "runtime_stage": "CONTROLLER_RESULT_FORMATION",
+      "target_path": "04_hash_data/promoted/e774c0fafcc43e10d95038fa6b8352299d2a57c38fcc6d1a6360d2b40f56f44e.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724.B.json",
+      "sha256": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724",
+      "bytes": 13154,
+      "object_class": "FROZEN_RESULT_DATA",
+      "role": "RESULT_DATA",
+      "runtime_stage": "RESULT_FREEZE_AND_REBIND",
+      "target_path": "04_hash_data/promoted/176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724.B.json",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "db336e48da42f538b0cb977e21a0a97d8784f6ea9fdb7c29422e9084d0f7d0d5.B.md",
+      "sha256": "db336e48da42f538b0cb977e21a0a97d8784f6ea9fdb7c29422e9084d0f7d0d5",
+      "bytes": 4190,
+      "object_class": "RESULT_DATA_REBIND_VALIDATION",
+      "role": "REBIND_VALIDATION",
+      "runtime_stage": "RESULT_FREEZE_AND_REBIND",
+      "target_path": "04_hash_data/promoted/db336e48da42f538b0cb977e21a0a97d8784f6ea9fdb7c29422e9084d0f7d0d5.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    },
+    {
+      "filename": "704e81adea6ed4a074bb20fcfab7a52c4a28cac339ef85c3143faab703e5ae7d.B.md",
+      "sha256": "704e81adea6ed4a074bb20fcfab7a52c4a28cac339ef85c3143faab703e5ae7d",
+      "bytes": 2844,
+      "object_class": "RESULT_FREEZE_AND_REBIND_CLOSURE",
+      "role": "FREEZE_REBIND_CLOSURE",
+      "runtime_stage": "RESULT_FREEZE_AND_REBIND",
+      "target_path": "04_hash_data/promoted/704e81adea6ed4a074bb20fcfab7a52c4a28cac339ef85c3143faab703e5ae7d.B.md",
+      "promotion_state": "VALIDATED_REUSABLE_HASH_DATA"
+    }
+  ],
+  "counts": {
+    "method_partial_results": 10,
+    "independent_workline_results": 3,
+    "stage_closures": 5,
+    "controller_result_objects": 4,
+    "freeze_rebind_objects": 3,
+    "total_excluding_this_manifest": 25
+  },
+  "final_result_data": {
+    "sha256": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724",
+    "filename": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724.B.json",
+    "state": "FROZEN_RESULT_DATA_READY_FOR_REPOSITORY_BINDING"
+  },
+  "promotion_validation": {
+    "runtime_complete": true,
+    "controller_result_validated": true,
+    "freeze_rebind_validated": true,
+    "semantic_expansion_count": 0,
+    "open_hold_preserved": true,
+    "hash_db_promotion": false,
+    "relation_registry_mutation": false,
+    "publication": false
+  },
+  "guards": [
+    "relation is not merge",
+    "relation is interconnecting",
+    "structure is not isolate",
+    "structure is relation processing"
+  ]
+}

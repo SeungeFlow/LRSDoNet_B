@@ -1,6 +1,47 @@
 {
   "schema_name": "lrsdonet_b_transformation_ledger",
   "version": "1.0.0",
-  "state": "EMPTY_APPEND_ONLY",
-  "events": []
+  "state": "FROZEN_RESULT_DATA_EVENT_RECORDED",
+  "events": [
+    {
+      "event_id": "RESULT_DATA_FREEZE_REBIND_20260728_001",
+      "event_type": "FREEZE_REBIND_TO_NEXT_DATA",
+      "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+      "method_lineup": {
+        "controller": "CAND-021",
+        "active_count": 11,
+        "active_lineup_sha256": "06729d5b49ce31dd851ab9be1a0030f3f48cd02348999930d28b0019b7a161b1"
+      },
+      "runtime_manifest": {
+        "sha256": "f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be",
+        "path": "04_hash_data/promoted/f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be.B.json",
+        "object_count_excluding_manifest": 25
+      },
+      "controller_result": {
+        "sha256": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4",
+        "path": "04_hash_data/promoted/53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4.B.md"
+      },
+      "result_data": {
+        "sha256": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724",
+        "path": "04_hash_data/promoted/176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724.B.json",
+        "state": "FROZEN_RESULT_DATA_READY_FOR_NEXT_PROCESS"
+      },
+      "validation": {
+        "controller_result_validation": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56",
+        "result_data_rebind_validation": "db336e48da42f538b0cb977e21a0a97d8784f6ea9fdb7c29422e9084d0f7d0d5",
+        "semantic_expansion_count": 0
+      },
+      "open_hold": {
+        "ledger_sha256": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3",
+        "unresolved_preserved": true,
+        "runtime_hold_objects": 6,
+        "required_next_data_groups": 12
+      },
+      "repository_region": "04_hash_data/promoted",
+      "hash_db_promoted": false,
+      "relation_registry_mutated": false,
+      "publication_performed": false,
+      "state": "FROZEN_RESULT_DATA_REPOSITORY_BINDING_PENDING"
+    }
+  ]
 }
