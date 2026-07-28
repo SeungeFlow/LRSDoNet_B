@@ -1,0 +1,88 @@
+{
+  "schema_name": "lrsdonet_b_hash_db_current_binding_manifest",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "state": "READY_FOR_HASH_DB_CURRENT_REPOSITORY_BINDING",
+  "generated_by": {
+    "instance": "gpt.think",
+    "seat": "gpt.xyzt"
+  },
+  "repository_baseline": {
+    "repository": "SeungeFlow/LRSDoNet_B",
+    "branch": "main",
+    "commit": "08eeed73185f75c4651bd2ae024bfcedf0b71a46",
+    "tree": "8b8e8a4c3fe0a45e8e42cca01273336705885441"
+  },
+  "hash_db_current": {
+    "path": "05_hash_db/current/378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87.B.json",
+    "sha256": "378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87",
+    "bytes": 17321,
+    "candidate_sequence": 1,
+    "predecessor": null,
+    "history_move_required": false,
+    "required_components": 6,
+    "closed_components": 6,
+    "state": "VALIDATED_HASH_DB_CANDIDATE_READY_FOR_CURRENT_BINDING"
+  },
+  "formation_support": [
+    {
+      "path": "04_hash_data/promoted/be02191b49df7e438a1075b315b63c52921385410af2a7715471ede47bc57ae6.B.md",
+      "sha256": "be02191b49df7e438a1075b315b63c52921385410af2a7715471ede47bc57ae6",
+      "bytes": 3528,
+      "object_class": "HASH_DB_FORMATION_VALIDATION"
+    },
+    {
+      "path": "04_hash_data/promoted/4e7870c0b59c53e6f80dd2ffc347ebedd08e02cde28448290545360f85906a1d.B.md",
+      "sha256": "4e7870c0b59c53e6f80dd2ffc347ebedd08e02cde28448290545360f85906a1d",
+      "bytes": 2508,
+      "object_class": "HASH_DB_FORMATION_DECISION_AND_CLOSURE"
+    }
+  ],
+  "checkpoint_update": {
+    "path": "gpt.xyzt.md",
+    "before_sha256": "03c778129263bc56d4672799615fb7edfed68ae3ca5e97bafc0cac331bd39f77",
+    "before_bytes": 21091,
+    "after_sha256": "41a77566e006da7833a6c235d237397dfa056ed3bdb37db7dadc195fca0371a6",
+    "after_bytes": 32183,
+    "stable_filename": true,
+    "same_commit_with_hash_db": true,
+    "next_gate": "HASH_DB_CURRENT_REPOSITORY_BINDING",
+    "recovery_first_reference": true
+  },
+  "expected_change_without_this_manifest": {
+    "added": [
+      "04_hash_data/promoted/be02191b49df7e438a1075b315b63c52921385410af2a7715471ede47bc57ae6.B.md",
+      "04_hash_data/promoted/4e7870c0b59c53e6f80dd2ffc347ebedd08e02cde28448290545360f85906a1d.B.md",
+      "05_hash_db/current/378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87.B.json"
+    ],
+    "modified": [
+      "gpt.xyzt.md"
+    ],
+    "deleted": [],
+    "renamed": []
+  },
+  "current_history_decision": {
+    "current_region": "05_hash_db/current",
+    "history_region": "05_hash_db/history",
+    "first_current_candidate": true,
+    "history_mutation": false,
+    "future_successor_rule": "PRESERVE_SUPERSEDED_CURRENT_IN_HISTORY_WITHOUT_BYTE_REWRITE"
+  },
+  "protected_states": {
+    "04_hash_data_staging_mutation": false,
+    "05_hash_db_history_mutation": false,
+    "transformation_ledger_mutation": false,
+    "relation_registry_mutation": false,
+    "publication_mutation": false,
+    "method_reexecution": false,
+    "HRTDB_A_mutation": false,
+    "Principle_C_mutation": false
+  },
+  "guards": [
+    "HASH_DB_FORMED_IS_NOT_CURRENT_BOUND",
+    "CURRENT_BOUND_IS_NOT_PUBLISHED",
+    "RESULT_DATA_IS_NOT_AUTOMATICALLY_PROMOTED_HASH_DB",
+    "RELATION_IS_NOT_MERGE",
+    "SUPERSEDES_DOES_NOT_DELETE"
+  ]
+}

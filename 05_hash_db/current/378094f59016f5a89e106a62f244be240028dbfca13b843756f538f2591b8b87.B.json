@@ -1,0 +1,442 @@
+{
+  "schema_name": "lrsdonet_b_hash_db",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "document_type": "HASH_DB_CURRENT_CANDIDATE",
+  "object_state": "VALIDATED_HASH_DB_CANDIDATE_READY_FOR_CURRENT_BINDING",
+  "identity_rule": "FILENAME_PREFIX_IS_SHA256_OF_EXACT_FILE_BYTES",
+  "producing_instance": "gpt.think",
+  "producing_seat": "gpt.xyzt",
+  "recorded_at": "2026-07-28",
+  "current_history_model": {
+    "candidate_sequence": 1,
+    "current_region": "05_hash_db/current",
+    "history_region": "05_hash_db/history",
+    "predecessor_hash_db": null,
+    "history_move_required_for_this_candidate": false,
+    "reason": "FIRST_HASH_DB_CURRENT_CANDIDATE_NO_PREDECESSOR_EXISTS",
+    "future_rule": "A_SUPERSEDED_CURRENT_HASH_DB_MUST_BE_PRESERVED_IN_HISTORY_WITHOUT_BYTE_REWRITE"
+  },
+  "repository_binding_context": {
+    "repository": "SeungeFlow/LRSDoNet_B",
+    "branch": "main",
+    "baseline_commit": "08eeed73185f75c4651bd2ae024bfcedf0b71a46",
+    "baseline_tree": "8b8e8a4c3fe0a45e8e42cca01273336705885441",
+    "repository_id": 1300913958,
+    "transformation_ledger_sha256": "0f4595712d58731fe0c1057b789452409aa25ed51f0a174799fc0afa540b08d8",
+    "hash_db_contract_sha256": "2061c9e6611edc086347a659d6a6810ea7efd705befbd86d9a271811108c1fef",
+    "current_readme_sha256": "8e86d322c50eaf181e46569c2fb6395ad7242bfb1277f9101776bfd4d6801935",
+    "history_readme_sha256": "aaaa1bb183385d1bdbe9659ce5b75a6ce66f1041a98f5bdd1a6587a44cb699fb",
+    "repository_mutation_in_formation": false
+  },
+  "completion_contract": {
+    "definition": "COMPLETE_EQUALS_DECLARED_REQUIRED_BOUNDARY_CLOSED",
+    "required_components": [
+      "TRACK_DB_SET",
+      "METHOD_APPLICATION_LINEAGE",
+      "RELATION_STRUCTURE",
+      "TRANSFORMATION_LEDGER",
+      "VALIDATION_STATE",
+      "FINAL_RESULT_DATA"
+    ],
+    "component_count": 6,
+    "closed_component_count": 6,
+    "boundary_state": "CLOSED_WITH_PRESERVED_OPEN_HOLD",
+    "guards": [
+      "TRACK_DB_IS_NOT_HASH_DB",
+      "RESULT_DATA_IS_NOT_AUTOMATICALLY_PROMOTED_HASH_DB",
+      "AGGREGATION_IS_NOT_RELATION_ANALYSIS",
+      "RELATION_IS_NOT_MERGE"
+    ]
+  },
+  "track_db_set": {
+    "source_repository": "SeungeFlow/HRTDB_A",
+    "branch": "TrackDB",
+    "commit": "0e085e00d975c0aa02f89711c7b6ccc3f2277df7",
+    "tree": "9f19fef08e12f1e64400ad3b7d4565333f9ac44b",
+    "mutation": false,
+    "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+    "input_registry_sha256": "a4379eb79f23039a5e450fe5806b66160e6c45820a1c45fc54c9d1678c317649",
+    "input_manifest_sha256": "0c2ae8c838031b0d33a831f9d34e882afe5103d051e56ca33939558ca249d9ef",
+    "common_schema_sha256": "b096130f6818b57d0287d217c40c7da5b4ad91e58081b4c84fe95726bda28d5d",
+    "intake_closure_sha256": "c13e8b6f1bcfd97abec3ca47aed7697fdda3c7905503a51fe4cbf0a5ec020f99",
+    "tracks": [
+      {
+        "track_id": "Track_72",
+        "track_db_sha256": "72428e7ddf3ea03db711449f3930698e82e4961a25103f330fa482dc7262d65b",
+        "head_profile_sha256": "242ee9537544050a5c6851d529964795d0bc4b80f3d812e67875fd9cbd0baafe",
+        "role": "OBSERVER_AXIS_REFERENCE_FRAME_PROVENANCE"
+      },
+      {
+        "track_id": "Track_9d",
+        "track_db_sha256": "9dfff9d3a75cc7387f10ae2571190964c94b22213cf0a43077afbdfaf9507ba4",
+        "head_profile_sha256": "2d3784d998974753dbd1eee53786a3f8148546c2b2651694724ba5cc716348a7",
+        "role": "SECONDARY_AI_DATA_CENTER_CONTEXT"
+      },
+      {
+        "track_id": "Track_c0",
+        "track_db_sha256": "c02a46b9b2d47c92d97ef782451b7bd6b271f225658787f51e505c84f83bbce3",
+        "head_profile_sha256": "e0abb173490c069a4d0b4ca6df555321c1a2aea1edd1fa4f3c9ee5dba36604fd",
+        "role": "ORIGIN_CLOCK_NUMBER_CONTINUITY_CRITERION"
+      },
+      {
+        "track_id": "Track_d1",
+        "track_db_sha256": "d11bd436902979cf4c5db1ace6f21887be1d3b29b3983e890f75304e0a7face2",
+        "head_profile_sha256": "ddf44bf59f36f903a47105ff20f636d2818bf905bbaf4417b8f74ca96db33a98",
+        "role": "REFERENCE_FRAME_TRANSFORMATION_CRITERION"
+      },
+      {
+        "track_id": "Track_15",
+        "track_db_sha256": "1523d068820c1ca704d3a23cc86b7fb1e3d62711c5646c3afef3b4ab84928c88",
+        "head_profile_sha256": "83a8f5aa3f1fa67732f836e3dd458894a84886ccb83832dc1911b664088273bf",
+        "role": "PRIMARY_US_EQUITY_INDEX_FUTURES_CASH_OPENING_DATA"
+      }
+    ],
+    "track_15_formation_lineage": {
+      "Pass_A": "7203769d2e7875be5e9699119b5c6b4b5ca8d6c552b597bb81dcbde4b0aa36d5",
+      "Pass_B": "5321f0c2cf4e01675b89270a8cca893d27f78ddb1e7e46a45e25936b7ae11b31",
+      "Pass_C": "db4983156d74ab9ac82a1504de223f4fc51ea8aad16bd7f2650483aeca9cdba8",
+      "Pass_D": "ead83c4277182c88b76352050c91a270b024603e8f7f57835aab70c12e360e6f",
+      "full_body_profile": "a615eca64af8699666e6d47a8b764c21120e9963cba7b82740c33ea4cbee1261"
+    },
+    "closure": {
+      "track_count": 5,
+      "head_profile_count": 5,
+      "process_ledger_count": 4,
+      "unreachable_tracks": 0
+    }
+  },
+  "method_application_lineage": {
+    "selection": {
+      "stage_a_sha256": "18cd44e8fa3d7bc3102cd1e483ab8ca518e886cf980614bf563892f71d246917",
+      "stage_b_sha256": "3cc620831da69578451b230aa6b925ea6702927aebbc32184b979bad122a19a6",
+      "active_lineup_sha256": "06729d5b49ce31dd851ab9be1a0030f3f48cd02348999930d28b0019b7a161b1",
+      "controller": "CAND-021",
+      "active_count": 11,
+      "CAND_093_state": "HOLD_RUNTIME_CATALOG_BINDING_REQUIRED"
+    },
+    "method_partial_results": {
+      "CAND-001": "e905b87e6f884c3b2f558076469abee90347e90c7feec35f3de2d9b05c756db7",
+      "CAND-003": "69ce241ad7b9b7579a04587b38ccc356d556915feaf209709c884a853d84e2b1",
+      "CAND-002": "9de21d7be5e0b66360d2f11047fdd6cb242652370cc6298251e3655f42f164d0",
+      "CAND-035": "da5af40472ac41403a422764ab0da7cd0782ef205ff9f8dc143333642ddde6c7",
+      "CAND-015": "1cb1e6aac44a9ad903870cc7f639fad355d35356dfe2dcdb5deb3b1a83df168f",
+      "CAND-032": "ffc18d068b26edf4705ed00d1e4e00d0d690393a94ab6b1b5a0a970f1842ebc0",
+      "CAND-020": "8614bf8ed31ce8cc5eccaa921fe95ab7ecca78c15bcc9f38ad916cf1a6eee0db",
+      "CAND-089": "0aa64160d75970224dd7001ad4c5f5560ba3b31264c398014520d7cfa0690e81",
+      "CAND-026": "0ec2041f1c50531c222b7dce1e2d2fd48fd3abd415744ccb6577f4c4ec0fb439",
+      "CAND-022": "8d632707f537bf9a3a530ce329727332006c600671fa8f712772c14dad7712f7"
+    },
+    "independent_worklines": {
+      "EVIDENCE_LINE": "1485c83bba5697999b6351d0a39f6e931c669ca7829eb7e893e48ea6fa0c278e",
+      "OBSERVATION_VALIDATION_LINE": "460392c79fcad8456d1a36930253c7cb79d95a84a1e568de46e1012ae8af2ab6",
+      "RELATION_LINE": "af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7"
+    },
+    "stage_closures": {
+      "SOURCE_EVIDENCE_GATE": "b31432c96d60c51f8e53850eee6ffd32cd9133ffe2f5fb8e3de96837fc9fa4d4",
+      "PURPOSE_REFERENCE_GATE": "516f669a9821d2f97bc4db0dd03973ea02d5be13106e73ccceaa46a947681fa2",
+      "VALIDATION_GATE": "3a8be3a5ba49feca9651b368500f97224a405971d1247fb7cf66ab44f0d15d2c",
+      "SCOPED_RELATION_FORMATION": "9872bb5f14e8d628a55425b2fb87ffe180ea1b51c499d8879a5745ca36b18965",
+      "INDEPENDENT_RUNTIME": "820ce96a45091d73e137b3e0afb0558793bfb0058118eac7499877a6fa0eb160"
+    },
+    "runtime_state": "ALL_ACTIVE_STAGES_EXECUTED",
+    "counts": {
+      "method_partial_results": 10,
+      "independent_worklines": 3,
+      "stage_closures": 5
+    }
+  },
+  "relation_structure": {
+    "source_objects": {
+      "activation": "8614bf8ed31ce8cc5eccaa921fe95ab7ecca78c15bcc9f38ad916cf1a6eee0db",
+      "boundary_cross": "0aa64160d75970224dd7001ad4c5f5560ba3b31264c398014520d7cfa0690e81",
+      "track_hash_lineage": "0ec2041f1c50531c222b7dce1e2d2fd48fd3abd415744ccb6577f4c4ec0fb439",
+      "relation_workline": "af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7"
+    },
+    "relations": [
+      {
+        "relation_id": "REL-FUTURES-CASH-OPENING",
+        "cross_id": "CROSS-OPENING-BOUNDARIES-001",
+        "state": "PASS",
+        "components": [
+          "FUTURES_SESSION_START",
+          "CASH_RTH_BOUNDARY",
+          "SECURITY_OFFICIAL_OPEN"
+        ],
+        "constraints": []
+      },
+      {
+        "relation_id": "REL-AUCTION-OFFICIAL-OPEN",
+        "cross_id": "CROSS-AUCTION-OPEN-BRANCHES-002",
+        "state": "PASS_WITH_BRANCH_HOLD",
+        "components": [
+          "AUCTION_PREEXECUTION_INFORMATION",
+          "NORMAL_CROSS_OFFICIAL_OPEN",
+          "FALLBACK_OFFICIAL_OPEN",
+          "FAILURE_DELAY_REOPEN"
+        ],
+        "constraints": [
+          "HOLD-002"
+        ]
+      },
+      {
+        "relation_id": "REL-QUOTE-TRADE-EXECUTION",
+        "cross_id": "CROSS-QUOTE-TRADE-EXECUTION-003",
+        "state": "PASS_QUALIFIED",
+        "components": [
+          "QUOTE_OBJECT",
+          "TRADE_OBJECT",
+          "EXECUTION_EVENT"
+        ],
+        "constraints": [
+          "HOLD-003"
+        ]
+      },
+      {
+        "relation_id": "REL-PRICE-FINALITY",
+        "cross_id": "CROSS-PRICE-FINALITY-004",
+        "state": "PASS_WITH_AXIS_HOLD",
+        "components": [
+          "DAILY_SETTLEMENT",
+          "LIVE_INDEX",
+          "SPECIAL_OPENING_QUOTATION",
+          "FINAL_SETTLEMENT"
+        ],
+        "constraints": [
+          "HOLD-004"
+        ]
+      }
+    ],
+    "relation_count": 4,
+    "states": {
+      "PASS": 1,
+      "PASS_WITH_BRANCH_HOLD": 1,
+      "PASS_QUALIFIED": 1,
+      "PASS_WITH_AXIS_HOLD": 1
+    },
+    "merge_count": 0,
+    "equality_edge_count": 0,
+    "causal_edge_count": 0,
+    "predictive_edge_count": 0,
+    "relation_registry_mutated": false
+  },
+  "transformation_ledger": {
+    "path": "03_process/TRANSFORMATION_LEDGER.json",
+    "sha256": "0f4595712d58731fe0c1057b789452409aa25ed51f0a174799fc0afa540b08d8",
+    "event_count": 1,
+    "event_id": "RESULT_DATA_FREEZE_REBIND_20260728_001",
+    "event_type": "FREEZE_REBIND_TO_NEXT_DATA",
+    "event_exact_byte_state": "FROZEN_RESULT_DATA_REPOSITORY_BINDING_PENDING",
+    "repository_binding_closed_by_commit": "08eeed73185f75c4651bd2ae024bfcedf0b71a46",
+    "append_only": true
+  },
+  "validation_state": {
+    "controller_result": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4",
+    "controller_result_validation": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56",
+    "open_hold_ledger": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3",
+    "result_data_rebind_validation": "db336e48da42f538b0cb977e21a0a97d8784f6ea9fdb7c29422e9084d0f7d0d5",
+    "freeze_rebind_closure": "704e81adea6ed4a074bb20fcfab7a52c4a28cac339ef85c3143faab703e5ae7d",
+    "runtime_binding_manifest": "f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be",
+    "canonical_records": {
+      "fully_closed": [
+        "CM-MKT-RD-001",
+        "CM-MKT-RD-003",
+        "CM-MKT-RD-004",
+        "CM-MKT-RD-005",
+        "CM-MKT-RD-006",
+        "CM-MKT-RD-009",
+        "CM-MKT-RD-011",
+        "CM-MKT-RD-013",
+        "CM-MKT-RD-015"
+      ],
+      "qualified": [
+        "CM-MKT-RD-008"
+      ],
+      "held": [
+        "CM-MKT-RD-002",
+        "CM-MKT-RD-007",
+        "CM-MKT-RD-010",
+        "CM-MKT-RD-012",
+        "CM-MKT-RD-014"
+      ],
+      "counts": {
+        "fully_closed": 9,
+        "qualified": 1,
+        "held": 5,
+        "total": 15
+      }
+    },
+    "open_hold": {
+      "aggregate": {
+        "conflicts": 16,
+        "ambiguities": 18,
+        "counterexamples": 13,
+        "base_exclusions": 12,
+        "missing_counterparts": 15,
+        "unresolved_groups": 20,
+        "required_next_data_groups": {
+          "total": 12,
+          "P0": 5,
+          "P1": 7
+        }
+      },
+      "runtime_hold_objects": [
+        {
+          "hold_id": "HOLD-001",
+          "state": "HOLD_REFERENCE_INCOMPLETE",
+          "affected_records": [
+            "CM-MKT-RD-002"
+          ],
+          "missing": [
+            "institution-specific Session Date definition",
+            "institution-specific Business Date definition"
+          ]
+        },
+        {
+          "hold_id": "HOLD-002",
+          "state": "HOLD_CURRENT_AUTHORITY",
+          "affected_records": [
+            "CM-MKT-RD-007"
+          ],
+          "missing": [
+            "current controlling failure/delay/reopen rule",
+            "effective-state binding",
+            "entry and exit trigger lineage"
+          ]
+        },
+        {
+          "hold_id": "HOLD-003",
+          "state": "QUALIFIED_WITH_FORMAL_SOURCE_HOLD",
+          "affected_records": [
+            "CM-MKT-RD-008"
+          ],
+          "missing": [
+            "formal authority source for uncovered First-firm subset"
+          ]
+        },
+        {
+          "hold_id": "HOLD-004",
+          "state": "HOLD_CONFLICTING_OFFICIAL_VERSIONS",
+          "affected_records": [
+            "CM-MKT-RD-010"
+          ],
+          "missing": [
+            "dated MES settlement Clock revision genealogy",
+            "controlling product version"
+          ]
+        },
+        {
+          "hold_id": "HOLD-005",
+          "state": "HOLD_CURRENT_AUTHORITY",
+          "affected_records": [
+            "CM-MKT-RD-012"
+          ],
+          "missing": [
+            "current LULD/reopen authority text",
+            "effective state",
+            "entry and exit triggers"
+          ]
+        },
+        {
+          "hold_id": "HOLD-006",
+          "state": "HOLD_SOURCE_ABSENT",
+          "affected_records": [
+            "CM-MKT-RD-014"
+          ],
+          "missing": [
+            "Provider official methodology",
+            "Provider official source identity"
+          ]
+        }
+      ],
+      "guards": {
+        "resolved_by_method_vote": 0,
+        "resolved_by_source_alias_count": 0,
+        "filled_from_memory": 0,
+        "silently_deleted": 0
+      }
+    },
+    "independent_workline_state": {
+      "workline_count": 3,
+      "direct_contradictions": 0,
+      "scope_differences_preserved": 4,
+      "agreement_used_as_proof": false,
+      "cross_line_overwrite": false,
+      "worklines": {
+        "EVIDENCE_LINE": "1485c83bba5697999b6351d0a39f6e931c669ca7829eb7e893e48ea6fa0c278e",
+        "OBSERVATION_VALIDATION_LINE": "460392c79fcad8456d1a36930253c7cb79d95a84a1e568de46e1012ae8af2ab6",
+        "RELATION_LINE": "af556e293f48bae65a9cc74a591b749e4fab49d69dbb3fcd6fac467c55fd94e7"
+      }
+    },
+    "semantic_expansion_count": 0,
+    "unreachable_frozen_fields": 0
+  },
+  "final_result_data": {
+    "path": "04_hash_data/promoted/176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724.B.json",
+    "sha256": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724",
+    "bytes": 13154,
+    "schema_name": "lrsdonet_b_result_data",
+    "document_type": "FROZEN_RESULT_DATA",
+    "source_result_objects": {
+      "controller_result": {
+        "filename": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4.B.md",
+        "sha256": "53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4",
+        "bytes": 10228
+      },
+      "validation_ledger": {
+        "filename": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56.B.md",
+        "sha256": "087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56",
+        "bytes": 5586
+      },
+      "open_hold_ledger": {
+        "filename": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3.B.md",
+        "sha256": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3",
+        "bytes": 4648
+      },
+      "formation_closure": {
+        "filename": "e774c0fafcc43e10d95038fa6b8352299d2a57c38fcc6d1a6360d2b40f56f44e.B.md",
+        "sha256": "e774c0fafcc43e10d95038fa6b8352299d2a57c38fcc6d1a6360d2b40f56f44e",
+        "bytes": 3178
+      }
+    },
+    "not_promoted": [
+      "UNIVERSAL_MARKET_OPEN_EVENT",
+      "UNIVERSAL_MARKET_OPEN_CLOCK",
+      "UNIVERSAL_OPEN_PRICE",
+      "CURRENT_FAILURE_REOPEN_DEFAULT_TOPOLOGY",
+      "CONTROLLING_MES_SETTLEMENT_CLOCK",
+      "CURRENT_CROSS_MARKET_LULD_REOPEN_EQUIVALENCE",
+      "PROVIDER_FEED_DERIVATION_OR_EQUIVALENCE",
+      "CAUSAL_CLAIM",
+      "PREDICTIVE_CLAIM",
+      "INVESTMENT_RECOMMENDATION",
+      "TRADING_SIGNAL"
+    ],
+    "unresolved_preserved": true
+  },
+  "repository_reachability": {
+    "promoted_runtime_manifest_path": "04_hash_data/promoted/f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be.B.json",
+    "promoted_runtime_manifest_sha256": "f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be",
+    "manifest_object_count_excluding_manifest": 25,
+    "promoted_object_count_including_manifest": 26,
+    "result_data_repository_binding_commit": "08eeed73185f75c4651bd2ae024bfcedf0b71a46",
+    "result_data_repository_binding_tree": "8b8e8a4c3fe0a45e8e42cca01273336705885441",
+    "all_six_components_reachable": true
+  },
+  "promotion_decision": {
+    "formation_verdict": "PASS_HASH_DB_FORMATION",
+    "current_binding_authorized_after_separate_exact_github_directive": true,
+    "history_mutation_required": false,
+    "hash_db_current_state_formed": false,
+    "relation_registry_mutation_authorized": false,
+    "publication_authorized": false,
+    "method_reexecution_authorized": false
+  },
+  "final_guards": [
+    "HASH_DB_IS_ONE_COMPLETE_DOCUMENT_DATABASE",
+    "FILE_COUNT_IS_NOT_COMPLETENESS",
+    "RESULT_DATA_IS_NOT_AUTOMATICALLY_PROMOTED_HASH_DB",
+    "PROMOTED_DOES_NOT_MEAN_OPEN_DELETED",
+    "RELATION_IS_NOT_MERGE"
+  ]
+}
