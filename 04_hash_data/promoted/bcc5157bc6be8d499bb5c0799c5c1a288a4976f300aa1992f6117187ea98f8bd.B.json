@@ -1,0 +1,57 @@
+{
+  "schema_name": "lrsdonet_b_relation_registry_binding_manifest",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "state": "READY_FOR_RELATION_REGISTRY_REPOSITORY_BINDING",
+  "generated_by": {
+    "instance": "gpt.think",
+    "seat": "gpt.xyzt"
+  },
+  "repository_baseline": {
+    "repository": "SeungeFlow/LRSDoNet_B",
+    "branch": "main",
+    "commit": "ce555dbb9d8daf705c7d7d17da8752be3881dac3",
+    "tree": "d8c870bf69493bac61d5f11b5336e1961a912abe"
+  },
+  "relation_registry": {
+    "path": "08_relation/RELATION_REGISTRY.json",
+    "before_sha256": "3ea4910f4271bb24bd1d64e657ce8508df2d484d52024066f7bc061ba0ba2350",
+    "before_bytes": 279,
+    "after_sha256": "1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90",
+    "after_bytes": 9507,
+    "relation_count": 4,
+    "append_only": true
+  },
+  "formation_objects": [
+    {
+      "path": "04_hash_data/promoted/b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc.B.json",
+      "sha256": "b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc",
+      "bytes": 10582
+    },
+    {
+      "path": "04_hash_data/promoted/4ccf4210f403c8e9bca65b1991465666f68d96104833fa4203d8e1598ffa46ad.B.md",
+      "sha256": "4ccf4210f403c8e9bca65b1991465666f68d96104833fa4203d8e1598ffa46ad",
+      "bytes": 2017
+    },
+    {
+      "path": "04_hash_data/promoted/072081be1cbf065388370fd541109825a7821f23bed2895faee8b3301e5e2898.B.md",
+      "sha256": "072081be1cbf065388370fd541109825a7821f23bed2895faee8b3301e5e2898",
+      "bytes": 1762
+    }
+  ],
+  "checkpoint": {
+    "path": "gpt.xyzt.md",
+    "before_sha256": "41a77566e006da7833a6c235d237397dfa056ed3bdb37db7dadc195fca0371a6",
+    "before_bytes": 32183,
+    "after_sha256": "2aa923ba72039ecafcb98088169b4bb5d785b5f98bac43ab0052557a5a7e5e12",
+    "after_bytes": 34257,
+    "same_commit_required": true
+  },
+  "protected_states": {
+    "Hash_DB_current_mutation": false,
+    "Hash_DB_history_mutation": false,
+    "publication_mutation": false,
+    "next_data_cycle_started": false,
+    "method_reexecution": false
+  }
+}

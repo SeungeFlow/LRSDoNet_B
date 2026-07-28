@@ -9,7 +9,7 @@ repository_identifier: B
 related_structural_identifiers:
   - C
   - B
-draft_state: ACTIVE_CHECKPOINT_TARGET_FOR_HASH_DB_CURRENT_BINDING
+draft_state: ACTIVE_CHECKPOINT_TARGET_FOR_RELATION_REGISTRY_BINDING
 position:
   name: gpt.xyzt
   seat: gpt.xyzt
@@ -28,8 +28,8 @@ timezone: Asia/Seoul
 current_repository_state:
   repository: SeungeFlow/LRSDoNet_B
   branch: main
-  verified_predecessor_commit: 08eeed73185f75c4651bd2ae024bfcedf0b71a46
-  verified_predecessor_tree: 8b8e8a4c3fe0a45e8e42cca01273336705885441
+  verified_predecessor_commit: ce555dbb9d8daf705c7d7d17da8752be3881dac3
+  verified_predecessor_tree: d8c870bf69493bac61d5f11b5336e1961a912abe
   predecessor_remote_readback: VERIFIED
   checkpoint_commit_resolution: REMOTE_MAIN_REF_CONTAINING_THIS_CHECKPOINT_VERSION
   checkpoint_tree_resolution: TREE_OF_RESOLVED_CHECKPOINT_COMMIT
@@ -41,8 +41,8 @@ checkpoint:
   final_definition: false
   role_description_only: false
   current_result_binding: FROZEN_RESULT_DATA_REPOSITORY_BOUND
-  current_hash_db_state: CANDIDATE_FORMED_AWAITING_CURRENT_BINDING
-  next_gate: HASH_DB_CURRENT_REPOSITORY_BINDING
+  current_hash_db_state: FIRST_CURRENT_REPOSITORY_BOUND
+  next_gate: RELATION_REGISTRY_REPOSITORY_BINDING
   same_commit_checkpoint_update_required: true
 operation_policy:
   github_web_manual_edit: PROHIBITED
@@ -575,6 +575,14 @@ milestones:
     runtime_manifest_sha256: f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be
     verdict: ACCEPT_RESULT_DATA_REPOSITORY_BINDING
     acceptance_object: 0c52bf745125c44dafff250bf1afbf699e9b5f2169d949ab3135bd78490957f7.B.md
+
+  First_Hash_DB_Current_and_Checkpoint_binding:
+    commit: ce555dbb9d8daf705c7d7d17da8752be3881dac3
+    tree: d8c870bf69493bac61d5f11b5336e1961a912abe
+    Hash_DB_sha256: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87
+    gpt_xyzt_sha256: 41a77566e006da7833a6c235d237397dfa056ed3bdb37db7dadc195fca0371a6
+    verdict: ACCEPT_HASH_DB_CURRENT_AND_GPT_XYZT_CHECKPOINT_BINDING
+    acceptance_object: e3194f00c2bfab6aeb70fc1f08ac2202a3edf8ba72c13e851d76982a7a6fc72a.B.md
 ```
 
 ### 12.2 현재 Input·Method·Result 상태
@@ -619,7 +627,7 @@ Hash_DB_candidate:
   sha256: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87
   filename: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87.B.json
   target_path: 05_hash_db/current/378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87.B.json
-  state: VALIDATED_HASH_DB_CANDIDATE_READY_FOR_CURRENT_BINDING
+  state: FIRST_HASH_DB_CURRENT_REPOSITORY_BOUND
   predecessor: null
   history_move_required: false
 
@@ -635,12 +643,51 @@ Hash_DB_candidate:
 ```text
 Result.Data Repository Bound
 → Hash DB Candidate Formed
-→ Current Binding Pending
+→ First Current Repository Bound
+→ Relation Registry Binding Pending
 ```
 
-이 문서 Version은 Hash DB Current 후보와 같은 GitHub 작업에서 함께 배치하는 Checkpoint Target이다.
+이 문서 Version은 Relation Registry Append Set과 같은 GitHub 작업에서 함께 배치하는 Checkpoint Target이다.
 이 Version 자체의 최종 Commit은 자기참조로 본문에 고정하지 않고,
 이 파일 Version을 포함하는 `main` Remote Ref에서 복구한다.
+
+
+### 12.4 현재 Relation Registry 결속 후보
+
+```yaml
+Relation_Registry_binding:
+  path: 08_relation/RELATION_REGISTRY.json
+  before_sha256: 3ea4910f4271bb24bd1d64e657ce8508df2d484d52024066f7bc061ba0ba2350
+  before_state: EMPTY_APPEND_ONLY
+  before_relation_count: 0
+
+  after_candidate_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
+  after_state: VERIFIED_RELATION_SET_RECORDED
+  after_relation_count: 4
+
+  append_set:
+    sha256: b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc
+    filename: b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc.B.json
+
+  formation_validation:
+    sha256: 4ccf4210f403c8e9bca65b1991465666f68d96104833fa4203d8e1598ffa46ad
+    filename: 4ccf4210f403c8e9bca65b1991465666f68d96104833fa4203d8e1598ffa46ad.B.md
+
+  formation_closure:
+    sha256: 072081be1cbf065388370fd541109825a7821f23bed2895faee8b3301e5e2898
+    filename: 072081be1cbf065388370fd541109825a7821f23bed2895faee8b3301e5e2898.B.md
+
+  publication_authorized: false
+  next_data_cycle_started: false
+```
+
+```text
+First Hash DB Current Bound
+→ Four Verified Relations
+→ Append-only Relation Registry Binding Pending
+```
+
+이 Checkpoint Version과 Relation Registry Append Set은 같은 GitHub Commit Tree에 결속되어야 한다.
 
 ---
 
@@ -1039,10 +1086,9 @@ Last Verified Position Reoccupied
 current_open_state:
   unresolved:
     - Principle_C_start_position_and_Start_Position_case_relation
-    - Hash_DB_current_repository_binding_not_yet_accepted
     - six_runtime_HOLD_objects_preserved
     - twelve_required_next_data_groups_preserved
-    - relation_registry_mutation_not_authorized
+    - relation_registry_binding_not_yet_accepted
     - publication_not_authorized
 
   non_blocking:
@@ -1054,32 +1100,36 @@ current_open_state:
     - Frozen_Result_Data_formation_complete
     - Frozen_Result_Data_repository_binding_complete
     - Hash_DB_candidate_formation_complete
+    - First_Hash_DB_current_binding_complete
+    - gpt_xyzt_checkpoint_binding_complete
     - Active_Schema_publication_verified
 
   current_gate:
-    name: HASH_DB_CURRENT_REPOSITORY_BINDING
-    candidate_sha256: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87
-    predecessor: null
-    history_move_required: false
+    name: RELATION_REGISTRY_REPOSITORY_BINDING
+    append_set_sha256: b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc
+    registry_before_sha256: 3ea4910f4271bb24bd1d64e657ce8508df2d484d52024066f7bc061ba0ba2350
+    registry_after_candidate_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
+    relation_count: 4
     same_commit_checkpoint_update: true
 
   next_safe_action:
     - resolve_remote_main_ref_containing_this_checkpoint_version
-    - verify_Hash_DB_candidate_exists_in_same_tree
-    - verify_formation_validation_and_binding_manifest
-    - verify_05_hash_db_history_unchanged
-    - verify_relation_registry_and_publication_unchanged
-    - accept_Hash_DB_current_repository_binding
-    - continue_from_next_explicit_gate
+    - verify_First_Hash_DB_current_and_checkpoint_same_tree
+    - verify_RELATION_REGISTRY_before_hash
+    - verify_four_relation_states_and_HOLD_constraints
+    - apply_append_only_registry_after_bytes
+    - verify_publication_and_next_data_cycle_unchanged
+    - accept_Relation_Registry_repository_binding
+    - continue_from_publication_decision_or_next_data_cycle_gate
 ```
 
 ```text
-Hash DB Candidate Formed
-≠ Hash DB Current Bound
-
 Hash DB Current Bound
-≠ Relation Registry Mutated
+≠ Relation Registry Bound
+
+Relation Registry Bound
 ≠ Publication
+≠ Next Data Cycle Started
 ```
 
 ---

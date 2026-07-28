@@ -1,7 +1,27 @@
 {
-  "schema_name": "lrsdonet_b_relation_registry",
-  "version": "1.0.0",
-  "state": "VERIFIED_RELATION_SET_RECORDED",
+  "schema_name": "lrsdonet_b_relation_registry_append_set",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "document_type": "RELATION_REGISTRY_APPEND_SET",
+  "state": "VALIDATED_APPEND_SET_READY_FOR_REPOSITORY_BINDING",
+  "producing_instance": "gpt.think",
+  "producing_seat": "gpt.xyzt",
+  "repository_baseline": {
+    "commit": "ce555dbb9d8daf705c7d7d17da8752be3881dac3",
+    "tree": "d8c870bf69493bac61d5f11b5336e1961a912abe"
+  },
+  "registry": {
+    "path": "08_relation/RELATION_REGISTRY.json",
+    "before_sha256": "3ea4910f4271bb24bd1d64e657ce8508df2d484d52024066f7bc061ba0ba2350",
+    "before_bytes": 279,
+    "before_state": "EMPTY_APPEND_ONLY",
+    "before_relation_count": 0,
+    "after_sha256": "1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90",
+    "after_bytes": 9507,
+    "after_state": "VERIFIED_RELATION_SET_RECORDED",
+    "after_relation_count": 4,
+    "operation": "APPEND_FOUR_VERIFIED_RELATIONS_WITH_EXACT_AFTER_BYTES"
+  },
   "relations": [
     {
       "registry_record_id": "LRSB-REL-20260728-001",
@@ -198,10 +218,20 @@
       "recorded_at": "2026-07-28"
     }
   ],
-  "guards": [
-    "relation is not merge",
-    "relation is interconnecting",
-    "structure is not isolate",
-    "structure is relation processing"
-  ]
+  "relation_state_counts": {
+    "PASS": 1,
+    "PASS_WITH_BRANCH_HOLD": 1,
+    "PASS_QUALIFIED": 1,
+    "PASS_WITH_AXIS_HOLD": 1
+  },
+  "guards": {
+    "merge_count": 0,
+    "equality_edges": 0,
+    "causal_edges": 0,
+    "predictive_edges": 0,
+    "hold_resolution": false,
+    "publication": false,
+    "next_data_cycle_started": false
+  },
+  "recorded_at": "2026-07-28"
 }
