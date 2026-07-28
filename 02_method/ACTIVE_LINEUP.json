@@ -1,7 +1,73 @@
 {
   "schema_name": "lrsdonet_b_active_method_lineup",
-  "version": "1.0.0",
-  "state": "EMPTY_UNTIL_INPUT_DATA_PROFILE",
-  "active": [],
+  "version": "1.1.0",
+  "state": "STAGE_BOUND_METHOD_LINEUP_SELECTED_READY_FOR_EXECUTION",
+  "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+  "temporary": true,
+  "selection": {
+    "controller": "CAND-021",
+    "selection_object": {
+      "hash": "3cc620831da69578451b230aa6b925ea6702927aebbc32184b979bad122a19a6",
+      "filename": "3cc620831da69578451b230aa6b925ea6702927aebbc32184b979bad122a19a6.B.md",
+      "path": "02_method/3cc620831da69578451b230aa6b925ea6702927aebbc32184b979bad122a19a6.B.md"
+    },
+    "stage_order": [
+      {
+        "stage": "SOURCE_EVIDENCE_GATE",
+        "methods": [
+          "CAND-001",
+          "CAND-003"
+        ]
+      },
+      {
+        "stage": "PURPOSE_REFERENCE_GATE",
+        "methods": [
+          "CAND-002",
+          "CAND-035"
+        ]
+      },
+      {
+        "stage": "VALIDATION_GATE",
+        "methods": [
+          "CAND-015",
+          "CAND-032"
+        ]
+      },
+      {
+        "stage": "SCOPED_RELATION_FORMATION",
+        "methods": [
+          "CAND-020",
+          "CAND-089",
+          "CAND-026"
+        ]
+      },
+      {
+        "stage": "INDEPENDENT_RUNTIME",
+        "methods": [
+          "CAND-022"
+        ]
+      }
+    ]
+  },
+  "active": [
+    "CAND-021",
+    "CAND-001",
+    "CAND-003",
+    "CAND-002",
+    "CAND-035",
+    "CAND-015",
+    "CAND-032",
+    "CAND-020",
+    "CAND-089",
+    "CAND-026",
+    "CAND-022"
+  ],
+  "hold": [
+    {
+      "id": "CAND-093",
+      "state": "HOLD_RUNTIME_CATALOG_BINDING_REQUIRED"
+    }
+  ],
+  "unresolved_preserved": true,
   "standby": "See METHOD_RUNTIME_CATALOG.json"
 }
