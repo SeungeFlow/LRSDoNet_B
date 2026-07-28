@@ -1,0 +1,195 @@
+{
+  "schema_name": "lrsdonet_b_next_data_acquisition_requirement_set",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "document_type": "NEXT_DATA_ACQUISITION_REQUIREMENT_SET",
+  "state": "PREPARED_AWAITING_SOURCE_IDENTITY_INTAKE",
+  "producing_instance": "gpt.think",
+  "producing_seat": "gpt.xyzt",
+  "source_open_hold_ledger": {
+    "sha256": "3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3",
+    "runtime_hold_objects": 6,
+    "held_canonical_records": 5,
+    "qualified_canonical_records": 1
+  },
+  "authoritative_required_next_data_groups": {
+    "total": 12,
+    "P0": 5,
+    "P1": 7,
+    "mapping_to_operational_bundles": "NOT_ONE_TO_ONE_AND_NOT_YET_RESOLVED",
+    "guard": "SIX_OPERATIONAL_BUNDLES_DO_NOT_REPLACE_OR_RENUMBER_THE_TWELVE_AUTHORITATIVE_GROUPS"
+  },
+  "operational_acquisition_bundles": [
+    {
+      "bundle_id": "NDA-BUNDLE-001",
+      "hold_id": "HOLD-001",
+      "title": "INSTITUTION_SPECIFIC_DATE_DEFINITIONS",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-002"
+      ],
+      "affected_relations": [],
+      "target_scope": "INSTITUTION_OR_VENUE_MUST_BE_DECLARED_BEFORE_ACQUISITION",
+      "authority_class": "OFFICIAL_RULEBOOK_OR_OFFICIAL_DEFINITION",
+      "effective_state_requirement": "CURRENT_OR_EXPLICITLY_DATED_HISTORICAL",
+      "requested_objects": [
+        "institution-specific Session Date definition",
+        "institution-specific Business Date definition"
+      ],
+      "purpose": "RESOLVE_REFERENCE_BOUNDARY_WITHOUT_PROMOTING_UNIVERSAL_DATE_RELATION",
+      "blocked_promotion": [
+        "universal or institution-wide date relation"
+      ]
+    },
+    {
+      "bundle_id": "NDA-BUNDLE-002",
+      "hold_id": "HOLD-002",
+      "title": "CURRENT_FAILURE_DELAY_REOPEN_AUTHORITY",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-007"
+      ],
+      "affected_relations": [
+        "REL-AUCTION-OFFICIAL-OPEN"
+      ],
+      "target_scope": "AFFECTED_VENUE_OR_RULE_SET_MUST_BE_DECLARED_FROM_RECORD_CONTEXT",
+      "authority_class": "CURRENT_CONTROLLING_OFFICIAL_RULE",
+      "effective_state_requirement": "CURRENT_EFFECTIVE_STATE_REQUIRED",
+      "requested_objects": [
+        "current controlling failure/delay/reopen rule",
+        "effective-state binding",
+        "entry and exit trigger lineage"
+      ],
+      "purpose": "TEST_BRANCH_HOLD_WITHOUT_TREATING_HISTORICAL_EXCEPTION_AS_CURRENT_DEFAULT",
+      "blocked_promotion": [
+        "current failure/reopen default topology"
+      ]
+    },
+    {
+      "bundle_id": "NDA-BUNDLE-003",
+      "hold_id": "HOLD-003",
+      "title": "FIRST_FIRM_FORMAL_SOURCE_SUBSET",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-008"
+      ],
+      "affected_relations": [
+        "REL-QUOTE-TRADE-EXECUTION"
+      ],
+      "target_scope": "UNCOVERED_FIRST_FIRM_SUBSET_ONLY",
+      "authority_class": "FORMAL_PRIMARY_AUTHORITY",
+      "effective_state_requirement": "SOURCE_EFFECTIVE_STATE_MUST_BE_DECLARED",
+      "requested_objects": [
+        "formal authority source for uncovered First-firm subset"
+      ],
+      "purpose": "TEST_QUALIFIED_SUBSET_WITHOUT_PROMOTING_UNIVERSAL_FIRST_FIRM_RELATION",
+      "blocked_promotion": [
+        "universal First-firm relation"
+      ]
+    },
+    {
+      "bundle_id": "NDA-BUNDLE-004",
+      "hold_id": "HOLD-004",
+      "title": "MES_DAILY_SETTLEMENT_CLOCK_REVISION_GENEALOGY",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-010"
+      ],
+      "affected_relations": [
+        "REL-PRICE-FINALITY"
+      ],
+      "target_scope": "MES_PRODUCT_AND_CONTROLLING_OFFICIAL_SPECIFICATION",
+      "authority_class": "DATED_OFFICIAL_PRODUCT_RULE_OR_SPECIFICATION",
+      "effective_state_requirement": "REVISION_GENEALOGY_AND_CONTROLLING_VERSION_REQUIRED",
+      "requested_objects": [
+        "dated MES settlement Clock revision genealogy",
+        "controlling product version"
+      ],
+      "purpose": "RESOLVE_PARALLEL_OFFICIAL_CLOCK_VERSIONS_WITHOUT_MAJORITY_VOTE",
+      "blocked_promotion": [
+        "one controlling MES settlement Clock",
+        "universal settlement clock"
+      ]
+    },
+    {
+      "bundle_id": "NDA-BUNDLE-005",
+      "hold_id": "HOLD-005",
+      "title": "CURRENT_LULD_REOPEN_AUTHORITY",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-012"
+      ],
+      "affected_relations": [],
+      "target_scope": "AFFECTED_MARKET_OR_VENUE_MUST_BE_DECLARED_FROM_RECORD_CONTEXT",
+      "authority_class": "CURRENT_CONTROLLING_OFFICIAL_RULE",
+      "effective_state_requirement": "CURRENT_EFFECTIVE_STATE_REQUIRED",
+      "requested_objects": [
+        "current LULD/reopen authority text",
+        "effective state",
+        "entry and exit triggers"
+      ],
+      "purpose": "TEST_CROSS_MARKET_RELATION_WITHOUT_ASSUMING_EQUIVALENCE",
+      "blocked_promotion": [
+        "current cross-market LULD/reopen equivalence"
+      ]
+    },
+    {
+      "bundle_id": "NDA-BUNDLE-006",
+      "hold_id": "HOLD-006",
+      "title": "PROVIDER_METHODOLOGY_AND_SOURCE_IDENTITY",
+      "state": "REQUEST_READY_IDENTITY_UNBOUND",
+      "affected_records": [
+        "CM-MKT-RD-014"
+      ],
+      "affected_relations": [],
+      "target_scope": "PROVIDER_IDENTITY_MUST_BE_RESOLVED_BEFORE_ACQUISITION",
+      "authority_class": "PROVIDER_OFFICIAL_METHODOLOGY_AND_PRIMARY_SOURCE",
+      "effective_state_requirement": "CURRENT_OR_EXPLICITLY_VERSIONED",
+      "requested_objects": [
+        "Provider official methodology",
+        "Provider official source identity"
+      ],
+      "purpose": "TEST_PROVIDER_FEED_DERIVATION_WITHOUT_MEMORY_FILL_OR_EQUIVALENCE_ASSUMPTION",
+      "blocked_promotion": [
+        "Provider-feed derivation",
+        "Provider-feed equivalence"
+      ]
+    }
+  ],
+  "operational_bundle_count": 6,
+  "required_fields_per_acquired_object": [
+    "requested_object",
+    "target_institution_or_venue_or_product",
+    "authority_class",
+    "current_or_historical_effective_state",
+    "expected_source_identity",
+    "purpose_of_acquisition",
+    "affected_record_ids",
+    "affected_relation_ids"
+  ],
+  "intake_contract": {
+    "source_identity_must_be_exact": true,
+    "source_inventory_required": true,
+    "process_lineage_required": true,
+    "result_data_required": true,
+    "validation_state_required": true,
+    "open_hold_required": true,
+    "github_position_or_external_fixed_address_required": true
+  },
+  "prohibited": [
+    "broad unbounded browsing",
+    "replacing controlling rule with commentary",
+    "using historical exception as current default",
+    "filling Provider methodology from memory",
+    "resolving official-version conflict by majority",
+    "assigning P0/P1 priorities to operational bundles without source mapping",
+    "starting Method selection before a new verified input set is bound"
+  ],
+  "activation": {
+    "input_registry_mutation": false,
+    "new_input_set_id": null,
+    "next_data_cycle_started": false,
+    "next_gate": "NEXT_DATA_SOURCE_IDENTITY_INTAKE"
+  },
+  "recorded_at": "2026-07-29"
+}

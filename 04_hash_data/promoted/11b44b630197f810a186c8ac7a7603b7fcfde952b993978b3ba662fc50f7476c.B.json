@@ -1,0 +1,59 @@
+{
+  "schema_name": "lrsdonet_b_post_registry_path_decision",
+  "schema_version": "1.0.0",
+  "identity_code": "B",
+  "document_type": "POST_REGISTRY_PATH_DECISION",
+  "state": "NEXT_DATA_ACQUISITION_PREPARATION_SELECTED",
+  "producing_instance": "gpt.think",
+  "producing_seat": "gpt.xyzt",
+  "repository_baseline": {
+    "repository": "SeungeFlow/LRSDoNet_B",
+    "branch": "main",
+    "commit": "9c41160d727ca7035f45c8fd96da0efcfd168089",
+    "tree": "c59d392c6cd598fb27e28ff479661b4078ca0f09"
+  },
+  "closed_current_cycle": {
+    "input_set_id": "HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001",
+    "result_data_sha256": "176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724",
+    "hash_db_current_sha256": "378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87",
+    "relation_registry_sha256": "1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90",
+    "relation_count": 4,
+    "state": "CLOSED_WITH_PRESERVED_OPEN_HOLD"
+  },
+  "route_decision": {
+    "publication": {
+      "decision": "HOLD",
+      "reason": "EXPLICIT_USER_AUTHORIZATION_AND_PUBLICATION_PAYLOAD_REQUIRED",
+      "mutation_authorized": false
+    },
+    "next_data_acquisition_preparation": {
+      "decision": "SELECTED",
+      "reason": "RESULT_DATA_TO_NEXT_DATA_USABILITY_AND_PRESERVED_OPEN_HOLD",
+      "actual_next_cycle_started": false
+    },
+    "method_reexecution": {
+      "decision": "NOT_SELECTED",
+      "reason": "NO_NEW_VERIFIED_INPUT_SET_BOUND"
+    }
+  },
+  "process_basis": [
+    "Data_n -> Method Lineup_n -> Partial Results_n -> Relation Validation_n -> Result_n -> Freeze/Rebind -> Data_n+1",
+    "Result-to-Next-Data usability must be validated.",
+    "Track DB input requires exact identity, source inventory, process lineage, result data, validation state, OPEN/HOLD and fixed position."
+  ],
+  "next_cycle_start_gate": {
+    "state": "CLOSED",
+    "required_condition": "NEW_VERIFIED_TRACK_DB_INPUT_SET_BOUND_TO_INPUT_REGISTRY",
+    "input_set_id": null,
+    "method_lineup_selection": "NOT_STARTED"
+  },
+  "guards": {
+    "publication_started": false,
+    "input_registry_mutated": false,
+    "next_data_cycle_started": false,
+    "method_reexecuted": false,
+    "open_hold_resolved": false,
+    "broad_unbounded_browsing_authorized": false
+  },
+  "recorded_at": "2026-07-29"
+}

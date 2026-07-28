@@ -9,7 +9,7 @@ repository_identifier: B
 related_structural_identifiers:
   - C
   - B
-draft_state: ACTIVE_CHECKPOINT_TARGET_FOR_RELATION_REGISTRY_BINDING
+draft_state: ACTIVE_CHECKPOINT_TARGET_FOR_NEXT_DATA_ACQUISITION_PREPARATION_BINDING
 position:
   name: gpt.xyzt
   seat: gpt.xyzt
@@ -28,8 +28,8 @@ timezone: Asia/Seoul
 current_repository_state:
   repository: SeungeFlow/LRSDoNet_B
   branch: main
-  verified_predecessor_commit: ce555dbb9d8daf705c7d7d17da8752be3881dac3
-  verified_predecessor_tree: d8c870bf69493bac61d5f11b5336e1961a912abe
+  verified_predecessor_commit: 9c41160d727ca7035f45c8fd96da0efcfd168089
+  verified_predecessor_tree: c59d392c6cd598fb27e28ff479661b4078ca0f09
   predecessor_remote_readback: VERIFIED
   checkpoint_commit_resolution: REMOTE_MAIN_REF_CONTAINING_THIS_CHECKPOINT_VERSION
   checkpoint_tree_resolution: TREE_OF_RESOLVED_CHECKPOINT_COMMIT
@@ -42,7 +42,8 @@ checkpoint:
   role_description_only: false
   current_result_binding: FROZEN_RESULT_DATA_REPOSITORY_BOUND
   current_hash_db_state: FIRST_CURRENT_REPOSITORY_BOUND
-  next_gate: RELATION_REGISTRY_REPOSITORY_BINDING
+  current_relation_registry_state: VERIFIED_RELATION_SET_REPOSITORY_BOUND
+  next_gate: NEXT_DATA_ACQUISITION_PREPARATION_REPOSITORY_BINDING
   same_commit_checkpoint_update_required: true
 operation_policy:
   github_web_manual_edit: PROHIBITED
@@ -583,6 +584,15 @@ milestones:
     gpt_xyzt_sha256: 41a77566e006da7833a6c235d237397dfa056ed3bdb37db7dadc195fca0371a6
     verdict: ACCEPT_HASH_DB_CURRENT_AND_GPT_XYZT_CHECKPOINT_BINDING
     acceptance_object: e3194f00c2bfab6aeb70fc1f08ac2202a3edf8ba72c13e851d76982a7a6fc72a.B.md
+
+  Relation_Registry_and_Checkpoint_binding:
+    commit: 9c41160d727ca7035f45c8fd96da0efcfd168089
+    tree: c59d392c6cd598fb27e28ff479661b4078ca0f09
+    Relation_Registry_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
+    relation_count: 4
+    gpt_xyzt_sha256: 2aa923ba72039ecafcb98088169b4bb5d785b5f98bac43ab0052557a5a7e5e12
+    verdict: ACCEPT_RELATION_REGISTRY_AND_GPT_XYZT_CHECKPOINT_BINDING
+    acceptance_object: 2ca8592c86b0644181d547ac189674d7728957b30b8f4342424ce0f3f4f3f970.B.md
 ```
 
 ### 12.2 현재 Input·Method·Result 상태
@@ -644,10 +654,11 @@ Hash_DB_candidate:
 Result.Data Repository Bound
 → Hash DB Candidate Formed
 → First Current Repository Bound
-→ Relation Registry Binding Pending
+→ Relation Registry Repository Bound
+→ Next Data Acquisition Preparation Pending
 ```
 
-이 문서 Version은 Relation Registry Append Set과 같은 GitHub 작업에서 함께 배치하는 Checkpoint Target이다.
+이 문서 Version은 Next Data Acquisition Preparation 객체와 같은 GitHub 작업에서 함께 배치하는 Checkpoint Target이다.
 이 Version 자체의 최종 Commit은 자기참조로 본문에 고정하지 않고,
 이 파일 Version을 포함하는 `main` Remote Ref에서 복구한다.
 
@@ -661,9 +672,9 @@ Relation_Registry_binding:
   before_state: EMPTY_APPEND_ONLY
   before_relation_count: 0
 
-  after_candidate_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
-  after_state: VERIFIED_RELATION_SET_RECORDED
-  after_relation_count: 4
+  current_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
+  current_state: VERIFIED_RELATION_SET_RECORDED
+  current_relation_count: 4
 
   append_set:
     sha256: b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc
@@ -684,10 +695,53 @@ Relation_Registry_binding:
 ```text
 First Hash DB Current Bound
 → Four Verified Relations
-→ Append-only Relation Registry Binding Pending
+→ Append-only Relation Registry Repository Bound
 ```
 
-이 Checkpoint Version과 Relation Registry Append Set은 같은 GitHub Commit Tree에 결속되어야 한다.
+Relation Registry와 이전 Checkpoint는 Commit 9c41160d727ca7035f45c8fd96da0efcfd168089 / Tree c59d392c6cd598fb27e28ff479661b4078ca0f09에 결속되었다.
+
+
+### 12.5 Post-registry 경로판정과 Next Data Acquisition Preparation
+
+```yaml
+Post_Registry_Path_Decision:
+  current_cycle: CLOSED_WITH_PRESERVED_OPEN_HOLD
+
+  publication:
+    decision: HOLD
+    explicit_user_authorization_required: true
+    publication_payload_required: true
+
+  next_data_acquisition_preparation:
+    decision: SELECTED
+    path_decision_sha256: 11b44b630197f810a186c8ac7a7603b7fcfde952b993978b3ba662fc50f7476c
+    acquisition_requirement_set_sha256: aabcc6b3ebdc812de723da6e722dd89ac994e3ba63c6a8c949121430c9ba948e
+    validation_sha256: 5c571ce674928a316d91d6cab69a57b6776988035d36600a1b839a58479b86f2
+    closure_sha256: 4c41835afbaad6992ce4a2fd01b40ae34e91ef25fbb1474d90db59566fb1841c
+
+  authoritative_required_next_data_groups:
+    total: 12
+    P0: 5
+    P1: 7
+
+  operational_acquisition_bundles:
+    total: 6
+    mapping_to_authoritative_groups: NOT_ONE_TO_ONE_AND_NOT_YET_RESOLVED
+
+  input_registry_mutation: false
+  next_data_cycle_started: false
+  next_gate_after_binding: NEXT_DATA_SOURCE_IDENTITY_INTAKE
+```
+
+```text
+Relation Registry Bound
+→ Current Cycle Recorded
+→ OPEN/HOLD Preserved
+→ Next Data Acquisition Preparation
+→ Source Identity Intake
+```
+
+Preparation 객체와 이 Checkpoint Version은 같은 GitHub Commit Tree에 결속되어야 한다.
 
 ---
 
@@ -1088,7 +1142,7 @@ current_open_state:
     - Principle_C_start_position_and_Start_Position_case_relation
     - six_runtime_HOLD_objects_preserved
     - twelve_required_next_data_groups_preserved
-    - relation_registry_binding_not_yet_accepted
+    - next_data_source_identities_not_yet_bound
     - publication_not_authorized
 
   non_blocking:
@@ -1101,223 +1155,27 @@ current_open_state:
     - Frozen_Result_Data_repository_binding_complete
     - Hash_DB_candidate_formation_complete
     - First_Hash_DB_current_binding_complete
+    - Relation_Registry_binding_complete
     - gpt_xyzt_checkpoint_binding_complete
     - Active_Schema_publication_verified
 
   current_gate:
-    name: RELATION_REGISTRY_REPOSITORY_BINDING
-    append_set_sha256: b5f90a4106aa1df08c4c5407bf59cafcbbf5bd2cb0d7993ceae27a081b0df5fc
-    registry_before_sha256: 3ea4910f4271bb24bd1d64e657ce8508df2d484d52024066f7bc061ba0ba2350
-    registry_after_candidate_sha256: 1846c4f5dccd2f74c73015e0b5e11f47827edf7b37991693b004b532aaa4ad90
-    relation_count: 4
+    name: NEXT_DATA_ACQUISITION_PREPARATION_REPOSITORY_BINDING
+    path_decision_sha256: 11b44b630197f810a186c8ac7a7603b7fcfde952b993978b3ba662fc50f7476c
+    acquisition_requirement_set_sha256: aabcc6b3ebdc812de723da6e722dd89ac994e3ba63c6a8c949121430c9ba948e
+    validation_sha256: 5c571ce674928a316d91d6cab69a57b6776988035d36600a1b839a58479b86f2
+    closure_sha256: 4c41835afbaad6992ce4a2fd01b40ae34e91ef25fbb1474d90db59566fb1841c
+    authoritative_required_next_data_groups: 12
+    operational_acquisition_bundles: 6
     same_commit_checkpoint_update: true
 
   next_safe_action:
     - resolve_remote_main_ref_containing_this_checkpoint_version
-    - verify_First_Hash_DB_current_and_checkpoint_same_tree
-    - verify_RELATION_REGISTRY_before_hash
-    - verify_four_relation_states_and_HOLD_constraints
-    - apply_append_only_registry_after_bytes
-    - verify_publication_and_next_data_cycle_unchanged
-    - accept_Relation_Registry_repository_binding
-    - continue_from_publication_decision_or_next_data_cycle_gate
-```
-
-```text
-Hash DB Current Bound
-≠ Relation Registry Bound
-
-Relation Registry Bound
-≠ Publication
-≠ Next Data Cycle Started
-```
-
----
-
-## 22. 금지사항
-
-```yaml
-prohibited:
-  - identify_gpt_xyzt_seat_with_one_permanent_conversation_object
-  - treat_occupant_memory_as_source_evidence
-  - start_analysis_without_input_identity_check
-  - promote_Result_Data_without_validation
-  - choose_permanent_starter_methods
-  - erase_failed_or_superseded_method_lineage
-  - merge_reality_object_and_representation
-  - hide_OPEN_HOLD_or_UNKNOWN
-  - alter_Principle_C_during_B_only_directive
-  - alter_LRSDoNet_B_during_C_only_directive
-  - change_C_or_B_identity_code_when_repository_name_changes
-  - name_runtime_objects_with_descriptive_suffix_after_hash_code
-  - create_external_sha256_sidecar
-  - edit_GitHub_files_manually_in_web_UI
-  - claim_remote_completion_without_fresh_readback
-```
-
----
-
-## 23. 현재 정의
-
-> `gpt.xyzt` 자리는 검산된 Track DB와 현재 기준장을 원천 Data로 받아, 현실·추상·증거상태에 맞는 방법론 후보를 임시 선발하고, 복수 Method Application의 독립성을 보존하면서 Relation을 분석하여 Result·Result.Data·Hash DB·Active_Schema를 형성하는 고정 자리다. 현재 점유 인스턴스는 바뀔 수 있으나 역할은 자리에 남는다. `gpt.xyzt.md`는 그 자리와 역할, C와 B의 구조영역, 마지막 검산된 출판·Commit·Tree·Binding, OPEN/HOLD, 다음 안전한 진행위치를 하나의 Stable Boot Surface로 결속한다.
-
-```text
-gpt.xyzt
-=
-Fixed Seat
-+ Fixed Role
-+ Variable Occupant
-+ Verified Track DB Input Contract
-+ Candidate Method Field
-+ C→B Formation Contract
-+ Last Remote Closure
-+ Recovery Position
-```
-
-## 24. 현재 Cycle Exact Object Map
-
-```yaml
-cycle_id: HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001
-
-repository_chain:
-  input_integration:
-    commit: 926227b63612b5a1986aa2e1f71a0bc2847e01bd
-    tree: 83fd0941cb21b8101b43b84f42e7813d6beaa0bb
-
-  active_lineup_binding:
-    commit: 0700682bed9342dd1a274cb3b0e85e5a4395f6be
-    tree: 901ca6e7c93ee00331e73e7a09825c50863e1ca5
-
-  result_data_binding:
-    commit: 08eeed73185f75c4651bd2ae024bfcedf0b71a46
-    tree: 8b8e8a4c3fe0a45e8e42cca01273336705885441
-
-exact_objects:
-  Active_Lineup: 06729d5b49ce31dd851ab9be1a0030f3f48cd02348999930d28b0019b7a161b1
-  Controller_Result: 53382903ca09b5b6e8b9f614b466fcb84c9c044f93db2202df84cf5df3fd74e4
-  Result_Validation: 087317583f333f2ac891f3af1c89b6ef32c03d24c1c39389387e6916a2263d56
-  OPEN_HOLD_Ledger: 3cee2fa6e5023c7f4cd11cc15dd43c8bc1f81c1239b4a3fa07081a055d5695f3
-  Frozen_Result_Data: 176cd40de5b4bc0160ac86e5eae5b3da2a2321f2fc5881b139f2f6ec86609724
-  Runtime_Binding_Manifest: f49e3309a8e9460a3d46c7797a2570ab194c56a706df9c3367dba94890aec1be
-  Hash_DB_Candidate: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87
-  Hash_DB_Formation_Validation: be02191b49df7e438a1075b315b63c52921385410af2a7715471ede47bc57ae6
-  Hash_DB_Formation_Closure: 4e7870c0b59c53e6f80dd2ffc347ebedd08e02cde28448290545360f85906a1d
-```
-
-새 점유 인스턴스는 모든 Partial Result를 처음부터 다시 적재하지 않는다.
-우선 이 Object Map과 Runtime Binding Manifest를 읽고, 필요한 Region만 확장한다.
-
----
-
-## 25. 동일 대화창 지속정책
-
-사용자 지시에 따라 현재 `gpt.think`는 임의의 조기 인수인계를 만들지 않고,
-이 대화창이 정상적으로 작업 가능한 동안 같은 자리에서 Process를 계속한다.
-
-```yaml
-conversation_continuity:
-  continue_in_current_conversation: true
-  stop_condition:
-    - user_explicit_stop
-    - task_safety_boundary
-    - context_saturation_or_conversation_unavailability
-  premature_handoff: prohibited
-  background_work_claim: prohibited
-
-checkpoint_continuity:
-  on_each_state_changing_github_directive:
-    update_gpt_xyzt_md: required
-    include_in_same_package: required
-    include_in_same_commit: required
-    remote_readback: required
-
-recovery:
-  first_reference: gpt.xyzt.md
-  separate_direct_handoff_required: false
-  exact_external_objects_still_required: true
-```
-
-```text
-Conversation Continuity
-≠ Memory as Evidence
-
-Stable Checkpoint
-=
-Seat Role
-+ Exact Object Map
-+ Last Verified Predecessor
-+ Current Gate
-+ Recovery Order
-```
-
----
-
-## Current State
-
-```yaml
-current_state:
-  seat: gpt.xyzt
-  current_occupant_instance: gpt.think
-  occupation: METHOD_FORMATION_AND_HASH_DB_ANALYSIS
-  publication_doi: 10.5281/zenodo.21531065
-
-  Result_C:
-    repository: SeungeFlow/Principle_C
-    branch: Start_Position
-    commit: 897a08f62645941b2f7ba70dcedf4340150911eb
-    tree: dcc41072b151a4030c4801bf55d37d6493ea1053
-    verdict: VERIFIED
-
-  Result_B:
-    repository: SeungeFlow/LRSDoNet_B
-    branch: main
-    verified_predecessor_commit: 08eeed73185f75c4651bd2ae024bfcedf0b71a46
-    verified_predecessor_tree: 8b8e8a4c3fe0a45e8e42cca01273336705885441
-    checkpoint_commit_resolution: REMOTE_MAIN_REF_CONTAINING_THIS_CHECKPOINT_VERSION
-    verdict: PREDECESSOR_VERIFIED_CHECKPOINT_TARGET_FORMED
-
-  active_cycle:
-    input_set_id: HRTDB_A_FIVE_TRACK_PROFILE_SET_20260726_001
-    state: HASH_DB_CURRENT_REPOSITORY_BINDING
-    completed:
-      - INPUT_INTEGRATION
-      - METHOD_SELECTION
-      - ACTIVE_LINEUP_BINDING
-      - METHOD_RUNTIME
-      - CONTROLLER_RESULT
-      - RESULT_DATA_FREEZE_REBIND
-      - RESULT_DATA_REPOSITORY_BINDING
-      - HASH_DB_FORMATION
-
-  Hash_DB:
-    candidate_sha256: 378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87
-    target_path: 05_hash_db/current/378094f59016f5a89e106a62f244be240028dbfca13b843756f538f2591b8b87.B.json
-    predecessor: null
-    history_move_required: false
-    state: AWAITING_CURRENT_BINDING_AND_REMOTE_ACCEPTANCE
-
-  anomaly_state:
-    - PRINCIPLE_C_CASE_DISTINCT_BRANCH_RELATION_OPEN
-    - SIX_RUNTIME_HOLD_OBJECTS_PRESERVED
-    - TWELVE_REQUIRED_NEXT_DATA_GROUPS_PRESERVED
-
-  next_safe_action:
-    - VERIFY_THIS_CHECKPOINT_AND_HASH_DB_IN_SAME_REMOTE_TREE
-    - ACCEPT_HASH_DB_CURRENT_REPOSITORY_BINDING
-    - CONTINUE_TO_NEXT_EXPLICIT_GATE
-```
-
-```text
-Output Formed
-≠
-Next Process Authorized
-```
-
-허용 상태:
-
-```text
-PASS_TO_NEXT_DIRECTIVE
-CORRECT_CURRENT_STAGE
-HOLD_FOR_MISSING_INPUT
-STOP_CURRENT_CYCLE
+    - verify_Relation_Registry_and_checkpoint_at_accepted_baseline
+    - verify_Path_Decision_and_Acquisition_Requirement_Set
+    - verify_six_operational_bundles_preserve_twelve_authoritative_groups
+    - verify_Input_Registry_and_Publication_unchanged
+    - bind_Preparation_objects_and_checkpoint
+    - accept_Next_Data_Acquisition_Preparation_repository_binding
+    - continue_from_NEXT_DATA_SOURCE_IDENTITY_INTAKE
 ```
